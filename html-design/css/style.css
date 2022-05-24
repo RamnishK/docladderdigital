@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: "Times New Roman";
+    src: url('/fonts/times.ttf');
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: "Times New Roman";
+} 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
 /*****************************
 Typography 
 *****************************/
         
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman";
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -41,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman";
     font-weight: normal;
     color: #000;
     margin-top: 0px;
@@ -99,7 +106,12 @@ small {
 .text-upper {
     text-decoration: uppercase!important;
 }
-
+.text-left {
+    text-align: left!important;
+}
+.text-right {
+    text-align: right!important;
+}
 *::-moz-selection {
     background: #9c7100;
     color: #ffffff;
@@ -395,9 +407,9 @@ textarea.form-control {
     z-index: 3;
     display: block;
     line-height: 1.5;
-    color: #495057;
+    color: #fff;
     content: "Browse";
-    background-color: #e9ecef;
+    background-color: #13648c;
     border-left: inherit;
     border-radius: 0;
     height: 32px;
@@ -526,7 +538,7 @@ textarea.form-control {
 .breadcrumb {
     padding-left: 0;
     background: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman";
     font-weight: 500;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -563,9 +575,6 @@ textarea.form-control {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    border-radius: 3px;
-    background: #fff;
-    border: 2px solid #eeeeee;
     padding: 5px 22px;
 }
 
@@ -577,26 +586,45 @@ textarea.form-control {
 }
 
 .pagination .page-item .page-link {
-    color: #000;
-    padding: 8px 16px;
+    color: #13648c;
+    padding: 5px 20px;
     border-radius: 3px;
     font-weight: 500;
     border: none;
+    font-size: 20px;
+    background-color: transparent;
 }
 
 .page-item.active .page-link,
 .pagination .page-item .page-link:hover {
-    background: #443000;
-    border-color: #443000;
+    background: #13648c;
+    border-color: #13648c;
     color: #ffffff;
 }
 
 .pagination .page-item .page-link:focus {
-    background: #443000;
-    border-color: #443000;
+    background: #13648c;
+    border-color: #13648c;
     color: #ffffff;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.pagination .page-item .page-link.prev-p {
+    color: #13648c;
+}
+.pagination .page-item .page-link.next-p {
+    color: #13648c;
+}
+.pagination .page-item .page-link.prev-p:hover {
+    color: #13648c;
+    background: #fff;
+    cursor: pointer;
+
+}
+.pagination .page-item .page-link.next-p:hover {
+    color: #13648c;
+    background: #fff;
+    cursor: pointer;
 }
 /* blockquote */
 
@@ -1385,10 +1413,12 @@ Feature Box
 .feature-info .feature-info-icon {
     font-size: 56px;
     line-height: 56px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     color: #9c7100;
+    margin-bottom: 20px;
 }
 
 .feature-info:hover .feature-info-icon {
@@ -1926,8 +1956,13 @@ Counter
     font-size: 22px;
     line-height: 25px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
 }
+
+#counter-div ul li img {
+    width: 90%!important;
+    height: auto!important;
+} 
 
 .counter .counter-content {
     vertical-align: top;
@@ -2818,12 +2853,12 @@ button {
 }
 
 .main-btn-dark a {
-    padding: 5px 30px;
-    font-size: 30px;
+    padding: 2px 20px;
+    font-size: 25px;
     letter-spacing: 2px;
     line-height: 30px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .btn-link {
@@ -2916,14 +2951,14 @@ button {
 }
 
 .post-job-btn {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     padding: 0 12px!important;
     border-radius: 5px;
 }
 
 .logout-btn {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     padding: 3px 12px!important;
     border-radius: 5px;
@@ -3376,7 +3411,7 @@ Header
 }
 
 .navbar .navbar-nav .nav-link {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     padding: 25px 20px;
     color: #ffffff;
@@ -3446,7 +3481,8 @@ Header
 
 .header .navbar-nav li>a i {
     margin-left: 3px;
-    font-size: 11px;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .header .add-listing {
@@ -3680,7 +3716,7 @@ Header
 .header .add-listing .login a {
     color: #000;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header .add-listing .login a:hover {
@@ -4399,7 +4435,7 @@ Banner
     line-height: 66px;
     color: #747070;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .homepage-slider {
@@ -4562,7 +4598,7 @@ Layout
     line-height: 35px;
     color: #443000;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
     text-transform: uppercase;
 }
 
@@ -4583,7 +4619,7 @@ Layout
     line-height: 35px;
     color: #000000;
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .section-title p {
@@ -4687,7 +4723,7 @@ Layout
     line-height: 20px;
     color: #000000;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .category-item:hover h6 {
@@ -4700,7 +4736,7 @@ Layout
     line-height: 35px;
     color: #9c7100;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .category-item:focus h6 {
@@ -5049,14 +5085,15 @@ Listing
     display: flex;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 95%;
     border-radius: 5px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.49));
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin: auto;
 }
 
 .job-list:hover {
-    -webkit-box-shadow: 0px 0px 24px 4px rgb(0 25 53 / 4%);
-    box-shadow: 0px 0px 24px 4px rgb(0 25 53 / 4%);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
     z-index: 9;
     cursor: pointer;
@@ -8862,10 +8899,6 @@ li.date-posted {
     border-radius: 0;
 }
 
-.popup-btn {
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px, rgb(51 51 51) 0px 0px 0px 3px;
-}
-
 #popup-list-desc .job-list {
     border: 0;
 }
@@ -9091,7 +9124,7 @@ h2.msg-title {
     line-height: 27px;
     color: #000000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .info-content {
@@ -9099,7 +9132,7 @@ h2.msg-title {
     line-height: 21px;
     color: #000000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 #mobile-app .feature-info-icon {
@@ -9133,7 +9166,7 @@ h2.msg-title {
     line-height: 44px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .recruiter-title {
@@ -9184,7 +9217,7 @@ h2.msg-title {
     line-height: 48px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .job-list-details ul li:last-child {
@@ -9213,7 +9246,7 @@ span.date-posted {
     line-height: 20px;
     color: #000000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 li.location {
@@ -9245,7 +9278,7 @@ li.detail-link {
     line-height: 14px;
     color: #000000;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
     text-align: center;
     margin-bottom: 5px;
 }
@@ -9255,7 +9288,7 @@ li.detail-link {
     line-height: 14px;
     color: #000000;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
     text-align: center;
 }
 
@@ -9266,7 +9299,7 @@ li.detail-link {
 .slider-heading-main {
     font-size: 50px;
     line-height: 50px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -9295,7 +9328,7 @@ li.detail-link {
     font-size: 40px;
     line-height: 40px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .slider-content {
@@ -9333,7 +9366,7 @@ li.detail-link {
     line-height: 48px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
     margin-left: -20%;
 }
 
@@ -9385,15 +9418,22 @@ li.detail-link {
     font-size: 40px;
     line-height: 35px;
     color: #13648c;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.inner-slider-heading-main p {
+    font-size: 23px;
+    line-height: 30px;
+    color: #13648c;
 }
 
 .inner-slider-heading-main h2 {
     font-size: 30px;
     line-height: 35px;
     color: #000;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0;
     padding: 20px 0 0;
 }
@@ -9404,11 +9444,14 @@ li.detail-link {
 /*}*/
 
 .inner-banner {
-    height: 300px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .border-blue-dark {
@@ -9426,9 +9469,10 @@ li.detail-link {
 
 #about-features .feature-info-content h5 {
     font-size: 20px;
-    line-height: 35px;
+    line-height: 30px;
     color: #9c7100;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 #about-features .feature-info-content p {
@@ -9443,6 +9487,13 @@ li.detail-link {
     line-height: 35px;
     color: #574e4e;
     font-weight: 400;
+}
+
+.about-title h2 span {
+    background: #9c7100;
+    color: #ffff;
+    padding: 5px 40px;
+    text-transform: uppercase;
 }
 
 .about-title h3 {
@@ -9463,10 +9514,11 @@ li.detail-link {
     font-size: 18px;
     line-height: 35px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
-    border: 2px solid #9c7100;
-    padding: 4px 20px;
+    border: 2px solid #13648c;
+    padding: 0px 25px;
+    text-transform: capitalize;
 }
 
 ul.about-recent-tabs {
@@ -9487,23 +9539,13 @@ ul.about-recent-tabs li p a {
     color: #9c7100!important;
 }
 
-.about-banner p {
-    font-size: 20px;
-    line-height: 25px;
-    color: #13648c;
-    font-weight: 400;
-    text-align: center;
-    margin: 20px 0 0;
-}
-
 #aboutus-tabs .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     background-color: #fff;
     font-size: 22px;
     line-height: 41px;
-    color: #4d4d4d;
+    color: #9c7100;
     font-weight: 400;
-    text-decoration: underline;
     padding: 0.5rem;
 }
 
@@ -9511,11 +9553,13 @@ ul.about-recent-tabs li p a {
     background-color: #fff;
     font-size: 22px;
     line-height: 41px;
-    color: #4d4d4d;
+    color: #000;
     font-weight: 400;
     padding: 0.5rem;
 }
-
+#aboutus-tabs .nav-pills .nav-link:hover{
+    color: #9c7100;
+}
 #aboutus-tabs.border-bottom {
     border-bottom: 1px solid #4d4d4d!important;
 }
@@ -9613,7 +9657,7 @@ ul.about-recent-tabs li p a {
     line-height: 20px;
     color: #000000;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
     margin-bottom: 30px;
 }
 
@@ -9621,8 +9665,8 @@ ul.about-recent-tabs li p a {
     font-size: 40px;
     line-height: 35px;
     color: #ffffff;
-    font-weight: 400;
-    font-family: "Roboto";
+    font-weight: 600;
+    font-family: "Times New Roman";
     text-align: center;
 }
 
@@ -9660,9 +9704,13 @@ ul.about-recent-tabs li p a {
     font-size: 20px;
     line-height: 35px;
     color: #000000;
-    font-weight: 400;
+    font-weight: 600;
 }
-
+#contact-form .main-btn {
+    border-radius: 0;
+    padding: 0px 30px;
+    margin-top: 20px;
+}
 .company-address {
     border: 3px solid #ddd;
 }
@@ -9680,7 +9728,7 @@ ul.about-recent-tabs li p a {
 }
 
 .newsletter-heading h2 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 35px;
     color: #574e4e;
     font-weight: 400;
@@ -9694,7 +9742,7 @@ ul.about-recent-tabs li p a {
 }
 
 .newsletter-email input {
-    width: 50%;
+    width: 100%;
     border: 1px solid #eeeeee;
     color: #574e4e;
     border-radius: 0px;
@@ -9708,7 +9756,7 @@ ul.about-recent-tabs li p a {
 }
 
 .newsletter-email button {
-    padding: 5px 20px;
+    padding: 5px 30px;
     border-radius: 0;
     filter: drop-shadow(0 0 2.5px rgba(121, 121, 121, 0.57));
     font-size: 22px;
@@ -9725,7 +9773,7 @@ ul.about-recent-tabs li p a {
     line-height: 35px;
     color: #b5b3b3;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
 }
 
 .newsletter-heading {
@@ -9822,7 +9870,7 @@ ul.bullets-primary li {
 /* Equipments Page */
 
 .equipment-banner {
-    height: 600px;
+    height: 500px;
     padding: 50px 0 50px 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9859,14 +9907,14 @@ ul.bullets-primary li {
     font-size: 72px;
     line-height: 70px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .equipment-title-heading h2 {
     font-size: 72px;
     line-height: 70px;
     color: #9c7100;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .equipment-title-heading p {
@@ -9880,7 +9928,7 @@ ul.bullets-primary li {
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -9900,18 +9948,20 @@ ul.bullets-primary li {
 }
 
 #equipment-brands .employers-list-logo img {
-    border: 2px solid #13648c;
+    border: 2px solid #9c7100;
     background: #fff;
     height: 100%;
     border-radius: 5px;
 }
-
+#equipment-brands .employers-grid{
+    padding: 5px 20px 0px;
+}
 #equipment-brands .owl-nav-bottom-center .owl-nav .owl-prev {
     right: auto;
     font-size: 25px;
     bottom: 42%;
     position: absolute;
-    color: #13648c;
+    color: #fff;
 }
 
 #equipment-brands .owl-nav-bottom-center .owl-nav .owl-next {
@@ -9920,18 +9970,19 @@ ul.bullets-primary li {
     bottom: 42%;
     position: absolute;
     left: auto;
-    color: #13648c;
+    color: #fff;
 }
 
 #equipment-features .feature-info {
-    padding: 15px 20px;
+    padding: 15px 18px;
     border-radius: 5px;
     background: #fff;
     height: 100%;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border: 1px solid #443000;
+   
 }
 
-#equipment-features .feature-info-content h5 {
+#equipment-features .feature-info-icon h5 {
     font-size: 20px;
     line-height: 30px;
     color: #000000;
@@ -9948,7 +9999,8 @@ ul.bullets-primary li {
     line-height: 20px;
     color: #000000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Times New Roman";
+    padding-left: 20px;
 }
 
 #equipment-features .section-title {
@@ -9959,8 +10011,8 @@ ul.bullets-primary li {
     margin-bottom: 0px;
     font-size: 30px;
     line-height: 55px;
-    color: #000000;
-    font-weight: 500;
+    color: #443000;
+    font-weight: 600;
     text-align: center;
     letter-spacing: 0;
 }
@@ -9974,9 +10026,6 @@ ul.bullets-primary li {
     text-align: center;
 }
 
-#equipment-features .img-fluid {
-    width: 50px;
-}
 
 #equipment-videos .section-title h1 {
     font-size: 30px;
@@ -9986,38 +10035,51 @@ ul.bullets-primary li {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0;
+    text-decoration: underline;
 }
 
 #equipment-videos .section-title h2 {
     margin-bottom: 0px;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
 }
 
 #equipment-videos .section-title {
     margin-bottom: 0px;
 }
+#equipment-videos video {
+    border: 4px solid #443000;
+    border-radius: 5px;
+}
 /* Equipment Product Landing Page */
 
 .banner-heading h1 {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 35px;
-    color: #ffffff;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 600;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .banner-heading p {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 35px;
-    color: #000000;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 500;
     margin-bottom: 0;
+}
+.products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 #equipment-products .select2-container--default .select2-selection--single {
@@ -10052,13 +10114,16 @@ ul.bullets-primary li {
 .products-heading h5 {
     font-size: 25px;
     line-height: 35px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
+    background: #9c7100;
+    padding: 5px 10px;
+    text-transform: uppercase;
 }
 
 .products-heading h6 {
-    font-size: 16px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 30px;
     color: #5d5a5a;
     font-weight: 500;
 }
@@ -10156,10 +10221,6 @@ ul.bullets-primary li {
     margin-top: 0;
 }
 
-#equipment-products .pagination {
-    border-radius: 5px;
-    border: 1px solid #5d5a5a;
-}
 /* Infrastructure Products */
 
 .hospital-name li {
@@ -10348,7 +10409,7 @@ span.divider {
 }
 
 .dashboard_nav_item ul li a i {
-    float: left;
+    float: right;
     font-size: 15px;
     padding-right: 10px;
     padding: 4px;
@@ -10390,9 +10451,6 @@ span.divider {
     background: rgb(255 255 255 / 16%);
 }
 
-i.login-icon {
-    margin-right: 10px;
-}
 
 .dashboard_nav_item .nav-tabs .nav-item {
     margin-bottom: 15px;
@@ -10435,15 +10493,13 @@ i.login-icon {
     color: #000;
 }
 
-.service-information .row h3 {
-    font-size: 30px;
-    line-height: 35px;
-    color: #13648c;
-    font-weight: 400;
-    margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 1px 1px #13648c54;
-    transition: text-shadow 300ms ease-out;
+.main-sub-title span {
+    background: #13648c;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 30px;
 }
 
 .service-information .table tr {
@@ -10491,21 +10547,12 @@ i.login-icon {
 }
 /* Product Details Page */
 
-.product-details-heading h1 {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-}
-
 .product-details-heading h2 {
-    font-size: 38px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
     color: #000;
-    font-weight: 400;
-}
-
-#product-details-banner {
-    padding: 175px 0 80px 0;
-    background-size: auto;
+    padding: 0;
 }
 
 #product-details-banner .main-btn-dark a {
@@ -10517,7 +10564,7 @@ i.login-icon {
 }
 
 .product-details-description {
-    border: 1px solid #443000;
+    border: 1px solid #13648c;
     padding: 3rem;
 }
 
@@ -10526,7 +10573,7 @@ i.login-icon {
 }
 
 .product-details-description {
-    border: 1px solid #443000;
+    border: 1px solid #13648c;
     padding: 3rem;
 }
 
@@ -10536,10 +10583,13 @@ i.login-icon {
     font-size: 21px;
     line-height: 35px;
     font-weight: 400;
-    border: 1px solid #443000;
+    border: 1px solid #13648c;
     margin-right: 0px;
     border-right: 0;
     margin-bottom: 0;
+}
+.product-description .nav-tabs .nav-item .nav-link.active{
+    background: #13648c;
 }
 
 .border-dark-right {
@@ -10642,12 +10692,15 @@ i.login-icon {
     font-weight: 400;
 }
 
-.product-name h5 {
+.product-name h5 span{
+    background: #9c7100;
+    color: #fff;
+    padding: 5px 30px;
     font-size: 24px;
     line-height: 35px;
-    color: #000000;
     font-weight: 500;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .product-name .product-subtitle span {
@@ -10842,10 +10895,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 400!important;
 }
 /* JOB-listing Page */
-
-#job-listing .pagination {
-    background: #fff;
-}
 
 .bg-light-white {
     background: #f7f7f7;
@@ -11189,6 +11238,11 @@ img.logo-grid {
 #premium-jobs-option .job-list-details ul li:last-child {
     text-align: center;
 }
+.sub-title-bg span {
+    background: #9c7100;
+    color: #fff;
+    padding: 8px 40px;
+}
 
 #premium-jobs .job-list.job-grid .job-list-logo {
     margin: 0 auto 20px;
@@ -11445,9 +11499,6 @@ img.logo-grid {
         font-size: 20px;
         line-height: 30px;
     }
-    .product-details-heading h1 {
-        font-size: 30px;
-    }
     .product-details-heading h2 {
         font-size: 30px;
     }
@@ -11464,7 +11515,7 @@ img.logo-grid {
         font-size: 18px;
     }
     .equipment-banner {
-        height: 600px;
+        height: 500px;
         padding: 100px 0 100px 0;
     }
     .equipment-title-heading {
@@ -11510,13 +11561,13 @@ img.logo-grid {
         font-size: 20px;
     }
     .newsletter-heading h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
     .newsletter-email button {
         font-size: 20px;
     }
     .newsletter-email input {
-        width: 70%;
+        width: 100%;
         padding: 10px 10px;
     }
     .newsletter-email input::placeholder {
@@ -11639,9 +11690,6 @@ img.logo-grid {
     }
     .job-list .job-list-details .job-list-title {
         margin-bottom: 5px;
-    }
-    .about-banner p {
-        font-size: 14px;
     }
     #aboutus-tabs .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
@@ -11801,6 +11849,9 @@ img.logo-grid {
     .banner-heading h1 {
         font-size: 28px;
         line-height: 35px;
+    }
+    .forget-pass-btn {
+        margin-top: 10px;
     }
 }
 
@@ -11972,6 +12023,22 @@ img.logo-grid {
     font-size: 16px;
 }
 
+#category-listing .employers-list {
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    padding: 15px 10px;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    filter:none;
+    -webkit-filter:none;
+}
+
 #jobs-tabs .nav {
     flex-wrap: nowrap;
 }
@@ -12090,14 +12157,15 @@ img.logo-grid {
 }
 
 .preview-heading h4 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
-    color: #000000;
+    color: #9c7100;
     font-weight: 600;
 }
 
 .preview-heading p {
-    font-size: 12px;
+    font-size: 14px;
+    color: #9c7100;
 }
 /*----------*/
 
@@ -12156,8 +12224,7 @@ img.logo-grid {
     width: 100px;
     line-height: 30px;
     border-radius: 5px;
-    border: 2px solid #443000;
-    color: #13648c;
+    color: #fff;
     font-size: 18px;
 }
 /* Recruiter Header */
@@ -12255,21 +12322,22 @@ img.logo-grid {
     border-radius: 3px;
 }
 
-.manage-table .section-title h4 {
+/* .manage-table .section-title h4 {
     font-size: 30px;
     line-height: 35px;
     color: #443000;
     font-weight: 600;
-}
+} */
 
 .manage-table .table tr th {
     font-size: 16px;
     line-height: 30px;
-    color: #13648c;
     font-weight: 500;
     margin-bottom: 0;
+    background: #13648c;
+    color: #fff;
+    border: 0;
 }
-
 .manage-table .user-dashboard-table tr td {
     color: #000;
     vertical-align: middle;
@@ -12317,7 +12385,28 @@ img.logo-grid {
     max-width: 600px;
     height: 500px;
 }
-
+#ViewEquipmentForm form.postjob-form {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-top: 0;
+}
+#ViewEquipmentForm .modal-title{
+    background: #9c7100;
+}
+#ViewEquipmentForm .box-header{
+    padding: 10px 20px;
+}
+#ViewSpaceForm form.postjob-form {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-top: 0;
+}
+#ViewSpaceForm .modal-title{
+    background: #9c7100;
+}
+#ViewSpaceForm .box-header{
+    padding: 10px 20px;
+}
 #ViewEquipmentForm .modal-body {
     height: 500px;
     overflow-y: scroll;
@@ -12393,12 +12482,8 @@ img.logo-grid {
     border-bottom: 1px solid #ddd;
 }
 
-#ViewJobForm .box-header h4 {
-    color: #13648c;
-}
-
 #ViewJobForm .box-header {
-    background: #f6f6f6;
+    background: #13648c;
     border-bottom: 0px;
     padding: 10px;
     margin-bottom: 0;
@@ -12406,6 +12491,12 @@ img.logo-grid {
     border-radius: 4px 4px 0 0;
     align-items: center;
     border: 1px solid #ddd;
+}
+#ViewJobForm .modal-title{
+    background: #9c7100;
+}
+#ViewJobForm .popup-btn {
+    box-shadow: none;
 }
 /* Social Icons */
 
@@ -12566,10 +12657,6 @@ ul.candidate-details-items li p {
     padding: 2px 5px;
 }
 
-.search-result-header .select2-container {
-    width: 50%!important;
-}
-
 .search-result-header .form-group label {
     font-size: 18px;
     line-height: 30px;
@@ -12599,7 +12686,7 @@ ul.candidate-details-items li p {
     border: 2px solid #fff;
     border-radius: 3px;
     background: #fff;
-    padding: 3px 12px;
+    padding: 1px 12px;
     color: #13648c;
     font-size: 16px;
     font-weight: 500;
@@ -12614,12 +12701,17 @@ ul.candidate-details-items li p {
 }
 
 .social-shares h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #fff;
     font-weight: 400;
 }
-
+.search-result-header ul.listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 .cand-title {
     color: #fff;
     font-weight: 500;
@@ -12922,4 +13014,15 @@ ul.details li {
 }
 .search-box-tab i {
     color: #443000;
+}
+.forget-pass-btn input {
+    background: #13648c;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.forget-pass-btn {
+    margin-top: 30px;
 }

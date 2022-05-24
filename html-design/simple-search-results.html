@@ -25,21 +25,20 @@
 
     <!-- Template Style -->
     <link rel="stylesheet" href="css/style.css" />
-
 </head>
 
 <body>
 
-    <!--=================================
+<!--=================================
 Header -->
     <header class="header header-transparent" id="recruiter-header">
         <nav class="navbar navbar-static-top navbar-expand-lg navbar-light header-sticky">
             <div class="container-fluid">
                 <button id="nav-icon4" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                </button>
                 <a class="navbar-brand" href="index.html">
                     <img class="img-fluid" src="images/main-logo.png" alt="logo">
                 </a>
@@ -52,7 +51,7 @@ Header -->
                             <a class="nav-link" href="recruiter-homepage.html"  aria-haspopup="true" aria-expanded="false">Recruiter Homepage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="service-information.html" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                            <a class="nav-link" href="recruiter-dashboard.html" aria-haspopup="true" aria-expanded="false">Dashboard</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false">My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
@@ -72,7 +71,7 @@ Header -->
                                         <li><a class="dropdown-item" href="space-form.html">Space Posting</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item dropdown-toggle" href="#">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+                                <li><a class="dropdown-item dropdown-toggle">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                                     <ul class="dropdown-menu left-side">
                                         <li><a class="dropdown-item" href="manage-jobs.html">Manage Jobs</a></li>
                                         <li><a class="dropdown-item" href="manage-equipments.html">Manage Equipment</a></li>
@@ -103,11 +102,11 @@ Header -->
             </div>
         </nav>
     </header>
-    <!--=================================
+<!--=================================
 Header -->
 
-    <!--=================================
-Register -->
+<!--=================================
+Simple search results -->
     <section class="space-ptb bg-light recruiter-job-posting padd-top-150">
         <div class="container">
             <div class="row justify-content-center">
@@ -116,11 +115,93 @@ Register -->
                         <div class="row">
                             <div class="col-md-6">
                                 <h3 class="cand-title mb-5">10 Candidates Found</h3>
-                                <div class="d-flex justify-content-between align-content-center mb-3">
-                                    <div class="form-check theme-col mt-3">
+                                <!--<div class="d-flex justify-content-between align-content-center mb-3">-->
+                                <!--    <div>-->
+                                <!--        <div class="form-group d-flex mb-3">-->
+                                <!--            <label>Freshness </label>-->
+                                <!--            <select class="form-control basic-select">-->
+                                <!--              <option value="value 01">1 month</option>-->
+                                <!--              <option value="value 02">3 month</option>-->
+                                <!--              <option value="value 03">6 month</option>-->
+                                <!--              <option value="value 04">12 month</option>-->
+                                <!--              <option value="value 04">More than 12 months</option>-->
+                                <!--            </select>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--    <div class="form-check theme-col mt-3">-->
+                                <!--        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">-->
+                                <!--        <label class="form-check-label" for="flexCheckDefault">Select All</label>-->
+                                <!--    </div>-->
+                                <!--    <ul class="list-unstyled social-shares mb-0">-->
+                                <!--        <h3 class="mb-0 me-2">Send Via :</h3>-->
+                                <!--        <a href="#" target="_blank">-->
+                                <!--            <li>-->
+                                <!--                <img src="images/social-icons/gmail.png" alt="Email">-->
+                                <!--            </li>-->
+                                <!--        </a>-->
+                                <!--        <a href="#" target="_blank">-->
+                                <!--            <li>-->
+                                <!--                <img src="images/social-icons/whatsapp-circle.png" alt="Email">-->
+                                <!--            </li>-->
+                                <!--        </a>-->
+                                <!--        <a href="#" target="_blank">-->
+                                <!--            <li>-->
+                                <!--                <img src="images/social-icons/msgs.png" alt="Email">-->
+                                <!--            </li>-->
+                                <!--        </a>-->
+                                <!--    </ul>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled d-block mb-0">
+                                    <li class="mb-5 pb-2 text-right">
+                                        <a href="simple-search.html" class="modify-search-btn"><i class="fas fa-edit me-2"></i>Modify Search</a>
+                                        
+                                    </li>
+                                    <!--<li>-->
+                                    <!--    <ul class="list-unstyled d-flex justify-content-end mb-0">-->
+                                    <!--        <li  class="me-2 w-100">-->
+                                    <!--            <div class="form-group d-flex mb-3">-->
+                                    <!--                <label>Freshness </label>-->
+                                    <!--                <select class="form-control basic-select">-->
+                                    <!--                  <option value="value 01">1 month</option>-->
+                                    <!--                  <option value="value 02">3 month</option>-->
+                                    <!--                  <option value="value 03">6 month</option>-->
+                                    <!--                  <option value="value 04">12 month</option>-->
+                                    <!--                  <option value="value 04">More than 12 months</option>-->
+                                    <!--                </select>-->
+                                    <!--            </div>-->
+                                    <!--        </li>-->
+                                    <!--        <li>-->
+                                    <!--            <a href="saved-search.html"><input type="button" class="saved-search-btn" value="Save"></a>-->
+                                    <!--        </li>-->
+                                    <!--    </ul>-->
+                                        
+                                    <!--</li>-->
+                                </ul>
+
+
+                            </div>
+                            <ul class="listing list-unstyled">
+                                <li>
+                                    <div class="form-group d-flex">
+                                            <label>Show </label>
+                                            <select class="form-control basic-select">
+                                              <option value="value 01">40</option>
+                                              <option value="value 02">80</option>
+                                              <option value="value 03">120</option>
+                                              <option value="value 04">160</option>
+                                              <option value="value 04">200</option>
+                                            </select>
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="form-check theme-col mt-2">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">Select All</label>
                                     </div>
+                                </li>
+                                <li>
                                     <ul class="list-unstyled social-shares mb-0">
                                         <h3 class="mb-0 me-2">Send Via :</h3>
                                         <a href="#" target="_blank">
@@ -139,33 +220,28 @@ Register -->
                                             </li>
                                         </a>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="list-unstyled d-block mb-0">
-                                    <li class="mb-5 pb-2 text-right">
-                                        <a href="simple-search.html" class="modify-search-btn"><i class="fas fa-edit me-2"></i>Modify Search</a>
-                                        <a href="saved-search.html"><input type="button" class="saved-search-btn" value="Save"></a>
-                                    </li>
-                                    <li>
-                                        <div class="form-group d-flex mb-3 justify-content-end">
-                                            <label>Freshness </label>
-                                            <select class="form-control basic-select">
-                                            <option value="value 01">1 month</option>
-                                            <option value="value 02">3 month</option>
-                                            <option value="value 03">6 month</option>
-                                            <option value="value 04">12 month</option>
-                                            <option value="value 04">More than 12 months</option>
-                                        </select>
-                                        </div>
-                                    </li>
-                                </ul>
-
-
-                            </div>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled d-flex justify-content-end mb-0">
+                                            <li  class="me-2 w-100">
+                                                <div class="form-group d-flex">
+                                                    <label>Freshness </label>
+                                                    <select class="form-control basic-select">
+                                                      <option value="value 01">1 month</option>
+                                                      <option value="value 02">3 month</option>
+                                                      <option value="value 03">6 month</option>
+                                                      <option value="value 04">12 month</option>
+                                                      <option value="value 04">More than 12 months</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="saved-search.html"><input type="button" class="saved-search-btn" value="Save"></a>
+                                            </li>
+                                        </ul>
+                                </li>
+                            </ul>
                         </div>
-
-
                     </div>
                     <div class="search-results-body">
                         <div class="search-result-list mb-4">
@@ -696,15 +772,13 @@ Register -->
             </div>
         </div>
     </section>
-    <!--=================================
-Register -->
+<!--=================================
+Simple search results -->
 
-
-    <!--=================================
+<!--=================================
 Footer-->
     <footer class="footer mt-0">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-8">
                     <div class="footer-logo">
@@ -799,7 +873,6 @@ Footer-->
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom border-dark-top">
             <div class="container">
                 <div class="row">
@@ -810,19 +883,19 @@ Footer-->
             </div>
         </div>
     </footer>
-    <!--=================================
+<!--=================================
 Footer-->
 
 
-    <!--=================================
+<!--=================================
 Back To Top-->
     <div id="back-to-top" class="back-to-top">
         <i class="fas fa-angle-up"></i>
     </div>
-    <!--=================================
+<!--=================================
 Back To Top-->
 
-    <!--=================================
+<!--=================================
 Javascript -->
 
     <!-- JS Global Compulsory (Do not remove)-->

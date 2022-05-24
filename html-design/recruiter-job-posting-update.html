@@ -49,15 +49,15 @@ Header -->
           <li class="nav-item">
             <a class="nav-link" href="recruiter-homepage.html"  aria-haspopup="true" aria-expanded="false">Recruiter Homepage</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="service-information.html"  aria-haspopup="true" aria-expanded="false">Dashboard</a>
+          <li class="nav-item">
+            <a class="nav-link" href="recruiter-dashboard.html"  aria-haspopup="true" aria-expanded="false">Dashboard</a>
           </li>
           <li class="nav-item dropdown ">
             <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="edit-profile.html">Profile</a></li>
-                <li><a class="dropdown-item" href="edit-profile.html">Manage Sub User</a></li>
-                <li><a class="dropdown-item" href="edit-profile.html">Change Password</a></li>
+                <li><a class="dropdown-item" href="manage-user.html">Manage Sub User</a></li>
+                <li><a class="dropdown-item" href="recruiter-change-password.html">Change Password</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown active">
@@ -66,27 +66,27 @@ Header -->
                 <li><a class="dropdown-item dropdown-toggle">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="recruiter-job-posting.html">Job Posting</a></li>
-                      <li><a class="dropdown-item" href="#">Equipment Posting</a></li>
-                      <li><a class="dropdown-item" href="#">Space Posting</a></li>
+                      <li><a class="dropdown-item" href="equipment-form.html">Equipment Posting</a></li>
+                      <li><a class="dropdown-item" href="space-form.html">Space Posting</a></li>
                     </ul>
                 </li>
                 <li><a class="dropdown-item dropdown-toggle" href="#">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
-                      <li><a class="dropdown-item" href="#">Manage Jobs</a></li>
-                      <li><a class="dropdown-item" href="#">Manage Equipment</a></li>
-                      <li><a class="dropdown-item" href="#">Manage Space</a></li>
+                      <li><a class="dropdown-item" href="manage-jobs.html">Manage Jobs</a></li>
+                      <li><a class="dropdown-item" href="manage-equipments.html">Manage Equipment</a></li>
+                      <li><a class="dropdown-item" href="manage-space.html">Manage Space</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item" href="#"></a></li>
+                
             </ul>
           </li>
           
           <li class="nav-item dropdown ">
             <a class="nav-link" href="equipments.html" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >Search<i class="fas fa-chevron-down fa-xs"></i></a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Simple Search</a></li>
-                <li><a class="dropdown-item" href="#">Advance Search</a></li>
-                <li><a class="dropdown-item" href="#">Saved Search</a></li>
+                <li><a class="dropdown-item" href="simple-search.html">Simple Search</a></li>
+                <li><a class="dropdown-item" href="advance-search.html">Advance Search</a></li>
+                <li><a class="dropdown-item" href="saved-search.html">Saved Search</a></li>
             </ul>
           </li>
           
@@ -109,7 +109,7 @@ Register -->
 <section class="space-ptb bg-light recruiter-job-posting padd-top-150">
   <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-12 job-posting-section-title"><h2>Post a New Job Update</h2></div>
+            <div class="col-lg-12 text-center"><h1 class="main-site-title sub-title-bg mb-5"><span>Post a new job Update</span></h1></div>
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-lg-8">
@@ -121,11 +121,11 @@ Register -->
                                 </div>
                                 <div class="box-body">
                                     <div class="row bg-white login-register justify-content-center">
-                                        <div class="form-group col-md-6 mb-3">
+                                        <div class="form-group col-md-12 mb-3">
                                             <label>Job Title<em class="text-danger">*</em></label>
                                             <input type="text" class="form-control" value="ABC" placeholder="Enter a Title">
                                         </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
+                                        <div class="form-group col-md-12 select-border mb-3">
                                             <label>Key Skills<em class="text-danger">*</em></label>
                                             <select class="form-control basic-select" multiple="multiple" placeholder="Enter a Title">
                                               <option value="value 01" selected>MD</option>
@@ -170,7 +170,7 @@ Register -->
                                               <input type="text" class="form-control" placeholder="Max" value="3">
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
+                                        <div class="form-group col-md-12 select-border mb-3">
                                             <label>Location<em class="text-danger">*</em></label>
                                             <select class="form-control basic-select">
                                                 <option value="AL" selected>Punjab</option>
@@ -226,7 +226,7 @@ Register -->
                                                 <option value="WY">Wyoming</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-6 mb-3">
+                                        <div class="form-group col-md-12 mb-3">
                                             <label>Desired Profile</label>
                                             <input type="text" class="form-control" value="Doctor" placeholder="Enter a Title">
                                         </div>
@@ -309,7 +309,7 @@ Register -->
                                             <!--<input type="text" class="form-control" value="" placeholder="">-->
                                         
                                             <label>Job Description<em class="text-danger">*</em></label>
-                                            <textarea class="form-control" rows="2">Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis.</textarea>
+                                            <textarea class="form-control" rows="3" maxlength="2000">Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis.</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@ Register -->
                             <!--education-->
                             <div class="box">
                                 <div class="row box-header">
-                                    <h4>Education</h4>
+                                    <h4>Educational Qualification</h4>
                                 </div>
                                 <div class="box-body">
                                     <div class="row bg-white login-register justify-content-center">
@@ -411,20 +411,20 @@ Register -->
                                 <div class="form-group col-md-12 mt-5 mb-3">
                                     <ul class="list-unstyled d-flex align-items-center justify-content-center">
                                         <li class="text-right me-4">
-                                            <input class="btn btn-primary-outline main-btn" type="button" value="Preview" data-bs-toggle="modal" data-bs-target="#jobPreviewModal">
+                                            <input class="btn btn-secondary main-btn" type="button" value="Preview" data-bs-toggle="modal" data-bs-target="#jobPreviewModal">
                                         </li>
                                         <li class="text-center me-4">
-                                            <input class="btn btn-primary-outline-dark main-btn" type="button" value="Submit">
+                                            <input class="btn btn-primary-dark main-btn" type="button" value="Submit">
                                         </li>
                                         <li class="text-left">
-                                            <input class="btn btn-primary-outline main-btn" type="button" value="Save Template">
+                                          <input class="btn btn-secondary main-btn" type="button" id="save-template" value="Save Template">
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" style="position: relative;">
                         <div class="get-template-field bg-white">
                             <div class="form-group col-md-12 select-border mb-3">
                                 <label>Get Template<em class="text-danger">*</em></label>
@@ -438,13 +438,13 @@ Register -->
                             <div class="col-md-12 mb-3">
                                 <ul class="list-unstyled d-flex align-items-center justify-content-center recruiter-btn">
                                     <li class="me-2">
-                                      <a href="recruiter-job-posting-get-template.html"><input class="btn btn-primary-outline-dark main-btn" type="button" value="Get"></a>
+                                      <a href="recruiter-job-posting-get-template.html"><input class="btn btn-secondary main-btn" type="button" value="Get"></a>
                                         </li>
                                     <li class="me-2">
-                                      <a href="recruiter-job-posting-update.html"><input class="btn btn-primary-outline-dark main-btn" type="button" value="Edit"></a>
+                                      <a href="recruiter-job-posting-update.html"><input class="btn btn-secondary main-btn" type="button" value="Edit"></a>
                                     </li>
                                     <li class=" me-lg-0">
-                                        <input class="btn btn-primary-outline-dark main-btn" type="button" value="Delete">
+                                        <input class="btn btn-secondary main-btn" type="button" value="Delete">
                                     </li>
                                 </ul>
                             </div>
@@ -464,6 +464,19 @@ Register -->
                                 </div>
                             </div>
                         </div>
+                        <div class="get-template-field bg-white"  style="position: absolute;bottom: 110px;width:100%;" id="save-template-div">
+                          <div class="form-group col-md-12 mb-3">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <label>Enter Template Name</label>
+                                <input type="text" class="form-control" value="Abc">
+                              </div>
+                              <div class="col-md-12 text-center mt-3">
+                                <input class="btn btn-secondary main-btn" type="button" value="Save">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                     
@@ -617,7 +630,7 @@ Job Preview Modal Popup -->
                     </ul>
                 </div>
                 <div class="col-lg-4 main-btn">
-                    <a href="#" class="btn-primary-dark">Apply Now</a>
+                    <a href="#" class="btn-secondary">Apply Now</a>
                 </div>
             </div>
             <div class="row">
@@ -692,6 +705,7 @@ Job Preview Modal Popup -->
                             </tr>
                         </tbody>
                     </table>
+                    <div class="text-center mt-3 mb-3"><input class="btn btn-secondary main-btn" type="button" value="Submit"></div>
                 </div>
               </div>
             </div>
@@ -719,6 +733,19 @@ Javascript -->
 
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>
+    <script>
+      $('#save-template-div').addClass('d-none');
+      $('#save-template').click(function(){
+          if($('#save-template-div').hasClass('d-none')){
+            // show
+            $('#save-template-div').removeClass('d-none');
+          }else{
+            // hide
+            $('#save-template-div').addClass('d-none');
+          }
+      });
+    </script>
+  
 
 </body>
 </html>
