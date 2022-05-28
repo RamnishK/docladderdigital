@@ -193,6 +193,9 @@ hr {
     font-size: 14px;
     font-weight: 600;
 }
+.box-shadow{
+    box-shadow: 0 0 10px 0 rgb(0 24 128 / 10%);
+}
 
 .form-control::placeholder {
     font-size: 16px;
@@ -526,7 +529,7 @@ textarea.form-control {
 }
 
 .back-to-top:hover {
-    background-color: #000;
+    background-color: #443000;
     color: #ffffff;
 }
 
@@ -773,6 +776,10 @@ Helper Classes
 
 .h-100vh {
     height: 100vh !important;
+}
+
+.space-ptb-outer{
+    padding: 150px 0 50px;
 }
 /* img holder */
 
@@ -1415,6 +1422,7 @@ Feature Box
     line-height: 56px;
     display: flex;
     align-items: center;
+    justify-content: center;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     color: #9c7100;
@@ -2752,13 +2760,13 @@ button {
 
 .btn-secondary:not(:disabled):not(.disabled).active {
     background: #fff;
-    color: #13648c;
+    color: #13648c!important;
     border: 2px solid #13648c;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active {
     background: #fff;
-    color: #13648c;
+    color: #13648c!important;
     border: 2px solid #13648c;
 }
 
@@ -2788,13 +2796,13 @@ button {
 
 .btn-primary:not(:disabled):not(.disabled).active {
     background: #fff;
-    color: #9c7100;
+    color: #9c7100!important;
     border: 2px solid #9c7100;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active {
     background: #fff;
-    color: #9c7100;
+    color: #9c7100!important;
     border: 2px solid #9c7100;
 }
 
@@ -2829,11 +2837,13 @@ button {
 }
 
 .main-btn a {
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 3px 20px;
+    padding: 0 20px;
     border-radius: 5px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .main-btn {
@@ -3304,6 +3314,11 @@ Header
 .header {
     background: #ffffff;
 }
+.header-transparent {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
 
 .header .container-fluid {
     padding: 0 60px;
@@ -3433,7 +3448,7 @@ Header
 .navbar-light .navbar-brand {
     color: #ffffff;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 150px;
     flex: 0 0 150px;
@@ -4030,7 +4045,7 @@ Header
 
 @media (max-width: 1400px) {
     .navbar .navbar-nav .nav-link {
-        padding: 10px 8px;
+        padding: 10px 10px;
     }
 }
 
@@ -4247,7 +4262,7 @@ Banner
     right: 0px;
 }
 
-.job-search-item .btn {
+/* .job-search-item .btn {
     padding: 18px 40px;
     margin-top: 29px;
     position: relative;
@@ -4255,7 +4270,7 @@ Banner
 
 .job-search-item .btn i {
     color: #ffffff;
-}
+} */
 
 .job-tag ul {
     list-style: none;
@@ -4439,7 +4454,7 @@ Banner
 }
 
 .homepage-slider {
-    height: 660px;
+    height: 700px;
 }
 
 #homepage-slider .carousel {
@@ -5370,6 +5385,7 @@ Listing
     padding: 25px 20px 0px;
     border-radius: 0px;
     display: block;
+    height: 100%;
     /* border: 1px solid #eeeeee; */
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -5787,10 +5803,10 @@ Listing
     padding-right: 0;
 }
 
-.job-search-field.job-search-field-02 input {
+/* .job-search-field.job-search-field-02 input {
     border: 1px solid #eeeeee;
     padding-left: 20px;
-}
+} */
 
 .job-search-field.job-search-field-02 .select2-container--default .select2-selection--single {
     border: 1px solid #eeeeee;
@@ -7209,104 +7225,77 @@ Not found
 /*****************************
 Footer
 *****************************/
-
 .footer {
     padding-top: 50px;
     color: #000;
     background: #fff;
 }
-
 .footer-link h5 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-
 .footer-bottom P {
     FONT-WEIGHT: 600;
     text-transform: uppercase;
     font-size: 16px;
 }
-
 .footer-contact-info ul li {
     padding-bottom: 0;
 }
-
 .footer-contact-info ul li p {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     margin-bottom: 0;
 }
-
 .footer ul {
     margin: 0;
 }
-
-.footer-shape {
-    position: absolute;
-    top: -100px;
-}
-
-.footer-top-logo img {
-    height: 34px;
-}
-
 .footer-logo img {
     width: 130px;
     height: auto;
 }
-
 .footer-logo {
     margin-bottom: 20px;
 }
-
 .social ul li {
     padding-right: 12px;
 }
-
 .footer .footer-contact-info ul li h5 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0px;
 }
-
 .footer .footer-contact-info ul li h4 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 0px;
 }
-
 .footer .footer-link ul li {
     margin-bottom: 0;
     line-height: 20px;
 }
-
 .footer .footer-link ul li:last-child {
     margin-bottom: 0px;
 }
-
 .footer .footer-link ul li a {
     color: #000;
     font-size: 15px;
     font-weight: 400;
 }
-
 .footer .footer-link ul li a:hover {
     color: #9c7100;
 }
-
 .footer .footer-contact-info ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 10px;
 }
-
 .footer .footer-contact-info ul li i {
     line-height: 24px;
 }
-
 .footer .footer-contact-info ul li span {
     padding-left: 0;
     -ms-flex-item-align: top;
@@ -7314,64 +7303,51 @@ Footer
     font-size: 20px;
     line-height: 20px;
 }
-
 .footer .footer-contact-info.bg-holder {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
 }
-
 .footer-bottom {
     padding: 10px 0px;
     color: #000;
 }
-
 .footer-bottom ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 0;
 }
-
 .footer-bottom ul li {
     margin-right: 10px;
 }
-
 .footer-bottom ul li a {
     color: #000;
     font-weight: 500;
 }
-
 .footer-bottom ul li a:hover {
     color: #9c7100;
 }
-
 .social ul li a {
     font-size: 20px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .social ul li a:hover {
     color: #9c7100!important;
 }
-
 .social ul li a {
     color: #000;
 }
-
 .social ul li.facebook a {
     color: #094ecd;
 }
-
 .social ul li.twitter a {
     color: #25d1e0;
 }
-
 .social ul li.linkedin a {
     color: #0077b5;
 }
-
 ul.bullets li:before {
     background-color: #9c7100;
     content: "";
@@ -7393,14 +7369,6 @@ ul.bullets li {
     position: relative;
 }
 
-#exampleModalCenter .nav-tabs .nav-item .nav-link {
-    margin-top: 0;
-}
-
-.forgot-pass p {
-    font-size: 16px;
-    font-weight: 500;
-}
 /*****************************
 Login 
 *****************************/
@@ -9305,10 +9273,6 @@ li.detail-link {
 
 .slider-ul {
     display: flex;
-    align-items: center;
-    height: 100%;
-    color: #fff;
-    width: 100%;
     text-align: left;
     justify-content: center;
 }
@@ -9319,21 +9283,21 @@ li.detail-link {
 
 .slider-heading {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 30px;
     color: #ffffff;
     font-weight: 300;
 }
 
 .slider-title {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
     color: #ffffff;
     font-weight: 600;
 }
 
 .slider-content {
     font-size: 20px;
-    line-height: 50px;
+    line-height: 40px;
     color: #ffffff;
     font-weight: 300;
 }
@@ -9400,15 +9364,15 @@ li.detail-link {
 }
 
 .slider-heading-dark {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 35px;
     color: #000000;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 0;
 }
 
 .slider-title-dark {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     color: #000000;
     font-weight: 400;
@@ -9423,28 +9387,33 @@ li.detail-link {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.inner-slider-heading-main h2 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #13648c;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 .inner-slider-heading-main p {
     font-size: 23px;
     line-height: 30px;
     color: #13648c;
 }
 
-.inner-slider-heading-main h2 {
+.inner-sub-heading-main h2 {
     font-size: 30px;
     line-height: 35px;
-    color: #000;
+    color: #9c7100;
     font-weight: 600;
     margin-bottom: 0;
     padding: 20px 0 0;
 }
 /* About page*/
-/*.about-banner {*/
-/*    height: 450px;*/
-/*    padding: 90px 0 100px 0!important;*/
-/*}*/
-
 .inner-banner {
-    height: 320px;
+    padding-top: 120px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9588,7 +9557,7 @@ ul.about-recent-tabs li p a {
     margin-top: 1rem;
 }
 
-.btn-contact a {
+.btn-contact {
     text-align: center;
     border-radius: 5px;
     font-size: 25px;
@@ -9866,12 +9835,13 @@ ul.bullets-primary li {
 
 .equipment-register-form .login-register {
     padding: 20px;
+    box-shadow: 0 0 10px 0 rgb(0 24 128 / 10%);
 }
 /* Equipments Page */
 
 .equipment-banner {
-    height: 500px;
-    padding: 50px 0 50px 0;
+    height: 600px;
+    padding: 150px 0 50px 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -10251,7 +10221,7 @@ span.divider {
 .recruiter-job-posting .login-register {
     padding: 20px;
     border-radius: 5px;
-    
+    box-shadow: 0 0 10px 0 rgb(0 24 128 / 10%);
 }
 
 .border-blr-none {
@@ -10310,7 +10280,7 @@ span.divider {
 /* My Profile Page */
 
 .edit-profile .box-header {
-    background: #443000;
+    background: #13648c;
 }
 
 .edit-profile .login-register {
@@ -10695,7 +10665,7 @@ span.divider {
 .product-name h5 span{
     background: #9c7100;
     color: #fff;
-    padding: 5px 30px;
+    padding: 5px 10px;
     font-size: 24px;
     line-height: 35px;
     font-weight: 500;
@@ -10756,8 +10726,8 @@ span.divider {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
-    padding: 5px;
-    width: 22%;
+    padding: 8px;
+    width: 100px;
     height: 100px;
     margin-right: 6px;
     text-align: left;
@@ -11168,6 +11138,9 @@ li.desc-price ul li:last-child {
 #job-description .widget ul {
     align-items: flex-start;
 }
+#job-description .job-list{
+    width: 100%;
+}
 /* Top Recruiters*/
 
 #top-recruiters .job-list.job-grid {
@@ -11241,7 +11214,7 @@ img.logo-grid {
 .sub-title-bg span {
     background: #9c7100;
     color: #fff;
-    padding: 8px 40px;
+    padding: 6px 50px;
 }
 
 #premium-jobs .job-list.job-grid .job-list-logo {
@@ -11857,7 +11830,7 @@ img.logo-grid {
 
 @media screen and (min-device-width: 1400px) {
     .slider-form-wrapper {
-        top: 50%;
+        top: 55%;
     }
 }
 
@@ -11916,14 +11889,17 @@ img.logo-grid {
     padding: 7px 10px 0 10px;
     text-align: center;
     line-height: 20px;
-    background: #9c7100;
+    background: #13648c;
     letter-spacing: 0.4px;
-    outline: 3px solid #9c7100;
+    outline: 3px solid #13648c;
     border: 1px solid #fff;
     position: absolute;
     left: 14px;
     top: 14px;
     z-index: 12;
+}
+.news-desc a {
+    color: #13648c;
 }
 
 .news-header {
@@ -12192,6 +12168,9 @@ img.logo-grid {
     background: #fbfdff;
     border: 2px solid #dde6ef;
     filter: none;
+    font-size: 16px;
+    color: #747070;
+    font-weight: 400;
 }
 
 .recruiter-job-posting .select2-container--default .select2-selection--multiple {
@@ -12243,6 +12222,25 @@ img.logo-grid {
 }
 
 #recruiter-header.header .add-listing .login a {
+    font-size: 16px;
+}
+
+/* Job Seeker Header */
+
+#job-seeker-header.header .navbar-nav>li {
+    margin-right: 10px;
+}
+
+#job-seeker.header .navbar .dropdown-menu {
+    left: 155%;
+}
+
+#job-seeker.header .navbar .dropdown-menu.left-side {
+    left: 148%;
+    top: 0;
+}
+
+#job-seeker.header .add-listing .login a {
     font-size: 16px;
 }
 /* Job Seeker Profile */
@@ -12321,7 +12319,10 @@ img.logo-grid {
     border: 2px solid #dde6ef;
     border-radius: 3px;
 }
-
+.del-all {
+    font-size: 18px;
+    padding: 0 10px;
+}
 /* .manage-table .section-title h4 {
     font-size: 30px;
     line-height: 35px;
@@ -12548,7 +12549,7 @@ img.logo-grid {
 }
 
 .job-seeker-profile .box-header {
-    background: #443000;
+    background: #13648c;
 }
 
 .job-seeker-profile .job-posting-section-title h2 {
@@ -12634,15 +12635,14 @@ ul.candidate-details-items li p {
 
 .search-results-body {
     background: #f5f5f5;
-    box-shadow: rgb(19 100 140 / 55%) 0px 0px 0px 2px, rgb(19 100 140) 0px 4px 6px -1px, #13648cb8 0px 1px 0px inset;
+    border: 2px solid #9c7100;
     padding: 50px 30px;
 }
 
 .search-result-header {
-    background: #13648c;
+    background: #9c7100;
     color: #fff;
     padding: 30px 30px 0px;
-    box-shadow: rgb(19 100 140 / 55%) 0px 0px 0px 2px, rgb(19 100 140) 0px 4px 6px 2px, #13648cb8 0px 1px 0px inset;
 }
 
 .social-shares li img {
@@ -12687,9 +12687,9 @@ ul.candidate-details-items li p {
     border-radius: 3px;
     background: #fff;
     padding: 1px 12px;
-    color: #13648c;
+    color: #9c7100;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 30px;
     margin-left: 0.2rem;
 }
@@ -12735,7 +12735,7 @@ ul.candidate-details-items li p {
 .content-widget-right h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #443000;
+    color: #9c7100;
     border-bottom: 1px dotted #9c7100;
     padding-bottom: 0.4rem;
     font-weight: 900;
@@ -12810,7 +12810,7 @@ ul.candidate-details-items li p {
 
 .details label {
     color: #000;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.4;
 }
@@ -12823,7 +12823,7 @@ ul.candidate-details-items li p {
 }
 .candidates-skill-tag li {
     display: inline-block;
-    margin: 5px;
+    margin: 0 5px 5px 0;
 }
 .candidates-skill-tag li a span {
     border-radius: 4px;
@@ -12851,7 +12851,7 @@ ul.candidate-details-items li p {
     color: #000;
     font-size: 14px;
     margin-right: 0.5rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0;
 }
 .candidate-details-right span.theme-cl {
@@ -12863,7 +12863,7 @@ ul.candidate-details-items li p {
     border-radius: 3px;
     text-align: center;
     line-height: 30px;
-    color: #443000;
+    color: #9c7100;
 }
 .border-dotted-bottom{
     border-bottom: 1px dotted #13648c;
@@ -12893,6 +12893,9 @@ ul.details li {
 .candidate-skills .fa-arrow-right {
     font-size: 11px;
 }
+.candidate-skills label{
+    font-weight: 600;
+}
 .candidate-skills span {
     color: #000;
     font-weight: 500;
@@ -12900,13 +12903,15 @@ ul.details li {
     line-height: 25px;
 }
 .candidate-details-right i {
-    color: #443000;
+    color: #9c7100;
+    font-size: 24px;
 }
 .candidate-details-right .fa-arrow-right{
     color:#000;
 }
 .candidate-details-right .fa-rupee-sign {
     color: #000;
+    font-size: 15px;
 }
 
 /*-------- Saved Search ----------*/
@@ -12917,14 +12922,16 @@ ul.details li {
 .saved-search-table table.table tr td {
     padding: 20px 15px;
     vertical-align: middle;
-    font-size: 15px;
+    font-size: 16px;
     border-bottom: 2px solid #dde6ef;
 }
 .saved-search-table table.table tr th {
     border-bottom: none!important;
     padding: 15px 15px;
     vertical-align: middle;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .saved-search-table table thead tr, .saved-search-table table thead tr {
     background: #13648c;
@@ -12946,7 +12953,7 @@ ul.details li {
 }
 .saved-search-table table.table td a h5 {
     margin-bottom: 0;
-    color: #443000;
+    color: #000;
 }
 .saved-search-table {
     box-shadow: 0 0 10px 0 rgb(0 24 128 / 10%);
@@ -12958,17 +12965,21 @@ ul.details li {
     border-top:0;
 }
 .saved-search-table table.table tr td i {
-    color: #443000;
+    color: #000;
+}
+.saved-search-table input {
+    font-size: 18px;
 }
 
 /* -------- Recruiter Homepage ---------- */
 
 .recruiter-homepage .nav-tabs .nav-item .nav-link{
     border: 0;
-    font-size: 25px;
+    font-size: 24px;
     letter-spacing: 0;
-    line-height: 30px;
-    font-weight: 500;
+    line-height: 20px;
+    color: #13648c;
+    font-weight: 600;
 }
 .recruiter-homepage .nav-tabs.nav-tabs-02 .nav-item .nav-link{
     padding: 12px 15px;
@@ -12979,28 +12990,40 @@ ul.details li {
     border-bottom: 3px solid #13648c;
 }
 .search-wrapper {
-    background: #fdfdfd;
+    background: #fff;
     padding: 20px 30px 10px;
     border-radius: 5px;
-    box-shadow: rgb(19 100 140 / 55%) 0px 0px 0px 2px, rgb(19 100 140) 0px 4px 6px -1px, #13648cb8 0px 1px 0px inset;
+    box-shadow: 0 0 10px 0 rgb(0 24 128 / 10%);
+
 }
 .search-box-tab {
-    background: #fdfdfd;
-    padding: 20px 30px 10px;
-    -webkit-box-shadow: 0 5px 20px 0 #13648c3d;
-    border: 2px solid #13648c2b;
-    border-radius: 5px;
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+    overflow: hidden;
+    /* border-left: 5px solid #c6c8d2; */
+    border-bottom: 0;
 }
-.search-box-tab .title {
+ul.candidates-skill-tag {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
 }
+/* .search-box-tab:hover {
+    border-left: 5px solid #13648c;
+    -webkit-box-shadow: 0 5px 20px 0 #13648c3d;
+} */
+
+/* .search-box-tab:last-child{
+    border-bottom: 2px solid #13648c2b;
+} */
+
 .search-box-tab .content li{
     display: inline-block;
-    margin-right: 30px;
-    font-size: 16px;
+    font-size: 18px;
+
     font-weight: 500;
     transition: 0.5s ease-in;
     -webkit-transition: 0.5s ease-in;
@@ -13014,6 +13037,7 @@ ul.details li {
 }
 .search-box-tab i {
     color: #443000;
+    font-size: 14px;
 }
 .forget-pass-btn input {
     background: #13648c;
@@ -13025,4 +13049,95 @@ ul.details li {
 }
 .forget-pass-btn {
     margin-top: 30px;
+}
+.contact-details-ul {
+    border: 2px solid #9c7100;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 2px;
+}
+.article .contact-details-ul li a {
+    color: #000;
+    font-size: 20px;
+}
+.article .contact-details-ul li a i{
+    color: #13648c;
+}
+.recruiter-ul .recruiter-btn a {
+    border: 2px solid #fff;
+    font-size: 25px;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.run-btn {
+    color: #13648c;
+    border: 0;
+    background: no-repeat;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-weight: 600;
+}
+.searched-btn input {
+    padding: 3px 20px;
+    height: auto;
+    border: 2px solid #13648c;
+}
+.search-wrapper-bg {
+    background: #fff;
+    padding: 50px;
+    border: 2px solid #13648c2b;
+    border-radius: 5px;
+}
+
+#exampleModalCenter .nav-tabs .nav-item .nav-link {
+    margin-top: 0;
+}
+
+.forgot-pass p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.select-all-bg {
+    background: #9c7100;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.select-all-bg .form-check-input:checked {
+    background-color: #13648c;
+    border-color: #13648c;
+}
+.search-tab-wrapper{
+    height: 300px;
+    overflow-y: scroll;
+    
+}
+.sub-btn {
+    -webkit-appearance: button !important;
+    cursor: pointer !important;
+    background: #13648c !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+.search-box-tab .content li span {
+    padding: 0 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* ADDED CSS */
+
+.mt-100 {
+    margin: 100px 0;
+}
+.about-spacing{
+    padding: 120px 0;
 }

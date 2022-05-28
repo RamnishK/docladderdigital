@@ -106,11 +106,15 @@ Header -->
 
 <!--=================================
 Register -->
-<section class="space-ptb bg-light recruiter-job-posting padd-top-150">
+<section class="space-ptb-outer bg-light recruiter-job-posting">
   <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-12 text-center mb-4"><h1 class="main-site-title sub-title-bg mb-4"><span>Post a new job</span></h1></div>
-            
+            <div class="col-lg-8 text-center mb-3">
+                <h2 class="main-site-title sub-title-bg"><span>Post a new job</span></h2>
+             </div>
+             <div class="col-lg-4"></div>
+        </div>
+        <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-lg-8">
@@ -309,7 +313,7 @@ Register -->
                                             <!--<label>Job Description</label>-->
                                             <!--<input type="text" class="form-control" value="" placeholder="">-->
                                         
-                                            <label>Job Description<em class="text-danger">*</em></label>
+                                            <label>Job Description<em class="text-danger">*</em> </label>
                                             <textarea class="form-control" rows="3" maxlength="2000"></textarea>
                                         </div>
                                     </div>
@@ -415,10 +419,10 @@ Register -->
                                             <input class="btn btn-secondary main-btn" type="button" value="Preview" data-bs-toggle="modal" data-bs-target="#jobPreviewModal">
                                         </li>
                                         <li class="text-center me-4">
-                                            <a href=""><input class="btn btn-primary-dark main-btn" type="button" value="Submit"></a>
+                                            <a href=""><input class="btn btn-primary main-btn" type="button" value="Submit"></a>
                                         </li>
                                         <li class="text-left">
-                                          <input class="btn btn-secondary main-btn" type="button" id="save-template" value="Save Template">
+                                          <input class="btn btn-secondary main-btn" type="button" data-bs-toggle="modal" data-bs-target="#save-template-div" value="Save Template">
                                         </li>
                                     </ul>
                                 </div>
@@ -426,7 +430,7 @@ Register -->
                         </form>
                     </div>
                     <div class="col-lg-4" style="position: relative;">
-                        <div class="get-template-field bg-white">
+                        <div class="get-template-field bg-white box-shadow">
                             <div class="form-group col-md-12 select-border mb-3">
                                 <label>Get Template<em class="text-danger">*</em></label>
                                 <select class="form-control basic-select">
@@ -465,19 +469,7 @@ Register -->
                                 </div>
                             </div>
                         </div>
-                        <div class="get-template-field bg-white"  style="position: absolute;bottom: 110px;width:100%;" id="save-template-div">
-                          <div class="form-group col-md-12 mb-3">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <label>Enter Template Name</label>
-                                <input type="text" class="form-control" value="Abc">
-                              </div>
-                              <div class="col-md-12 text-center mt-3">
-                                <input class="btn btn-secondary main-btn" type="button" value="Save">
-                              </div>
-                            </div>
-                        </div>
-                      </div>
+
                     </div>
                 </div>
                     
@@ -606,7 +598,6 @@ Back To Top-->
 
 <!--=================================
 Job Preview Modal Popup -->
-
 <div class="modal fade" id="jobPreviewModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -714,9 +705,39 @@ Job Preview Modal Popup -->
     </div>
   </div>
 </div>
+<!--=================================
+Job Preview Modal Modal Popup -->
 
 <!--=================================
-Browse by category Modal Popup -->
+Save Template Modal Popup -->
+<div class="modal fade" id="save-template-div" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+        <div class="modal-header p-3 bg-primary">
+                <h4 class="mb-0 text- text-white">Save Your Template</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="modal-body">
+            <div class="get-template-field bg-white" id="">
+                <div class="form-group col-md-12 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Enter Template Name</label>
+                            <input type="text" class="form-control" value="Abc">
+                        </div>
+                        <div class="col-md-12 text-center mt-3">
+                            <input class="btn btn-secondary main-btn" type="button" value="Save">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!--=================================
+Save Template Modal Popup -->
+
 
 <!--=================================
 Javascript -->
@@ -735,18 +756,18 @@ Javascript -->
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>
 
-  <script>
-    $('#save-template-div').addClass('d-none');
-    $('#save-template').click(function(){
-        if($('#save-template-div').hasClass('d-none')){
+  <!--<script>-->
+  <!--  $('#save-template-div').addClass('d-none');-->
+  <!--  $('#save-template').click(function(){-->
+  <!--      if($('#save-template-div').hasClass('d-none')){-->
           // show
-          $('#save-template-div').removeClass('d-none');
-        }else{
+  <!--        $('#save-template-div').removeClass('d-none');-->
+  <!--      }else{-->
           // hide
-          $('#save-template-div').addClass('d-none');
-        }
-    });
-  </script>
+  <!--        $('#save-template-div').addClass('d-none');-->
+  <!--      }-->
+  <!--  });-->
+  <!--</script>-->
 
 </body>
 </html>
