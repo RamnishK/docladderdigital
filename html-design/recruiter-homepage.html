@@ -25,7 +25,7 @@
 
     <!-- Template Style -->
     <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
 </head>
 
@@ -115,14 +115,14 @@ Register -->
                 <div class="col-lg-12 mb-3"><h2 class="main-site-title sub-title-bg ms-2 text-center"><span>Recent Searches</span></h2></div>
                 <div class="col-lg-12">
                      <div class="search-wrapper">
-                       <div class="d-flex">
+                       <div class="row">
                          <div class="justify-content-start">
                            <ul class="nav nav-tabs nav-tabs-02" role="tablist">
-                             <li class="nav-item">
-                               <a class="nav-link active ms-0" id="simple-search" data-bs-toggle="tab" href="#simple-search-tab" role="tab" aria-controls="simple-search-tab" aria-selected="true">Simple Search</a>
+                             <li class="nav-item col-lg-6">
+                               <a class="nav-link active ms-0" style="width: 35%;" id="simple-search" data-bs-toggle="tab" href="#simple-search-tab" role="tab" aria-controls="simple-search-tab" aria-selected="true">Simple Search</a>
                              </li>
-                             <li class="nav-item">
-                               <a class="nav-link" id="advance-search" data-bs-toggle="tab" href="#advance-search-tab" role="tab" aria-controls="advance-search-tab" aria-selected="false">Advance Search</a>
+                             <li class="nav-item col-lg-6">
+                               <a class="nav-link" id="advance-search" style="width: 37%;" data-bs-toggle="tab" href="#advance-search-tab" role="tab" aria-controls="advance-search-tab" aria-selected="false">Advance Search</a>
                              </li>
                            </ul>
                          </div>
@@ -132,132 +132,150 @@ Register -->
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -266,220 +284,250 @@ Register -->
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6  mb-0">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                        
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-0">
+                                <div class="col-lg-6  mb-4">
                                     <div class="search-box-tab search-border">
-                                        <div class="d-flex align-items-center">
-                                            <h5 class="mb-0">Keyskills</h5>
-                                            <span><i class="fas fa-arrow-right mx-2"></i></span>
-                                            <ul class="candidates-skill-tag list-unstyled mb-0">
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
-                                                <li><a href="javascript:void(0);"><span>ENT</span></a></li>
+                                        <div class="d-flex align-items-center bg-white-odd">
+                                            <h5 class="mb-0">Key skills</h5>
+                                            <span class="mx-2 fw-bold">:</span>
+                                            <ul class="d-flex align-items-center list-unstyled mb-0">
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
+                                                <li class="me-2 text-secondary">ENT</li>
                                             </ul>
                                         </div>
-                                        <ul class="list-unstyled mb-0 content mt-3 me-0">
+                                        <ul class="list-unstyled mb-0 content bg-blue-even me-0">
+                                            <li><i class="far fa-calendar-alt me-2"></i>01 Jan 2021</li>
+                                            <li><i class="fas fa-clock me-1"></i>03:45pm</li>
                                             <li><i class="fas fa-map-marker-alt"></i> Jalandhar</li>
                                             <li><i class="fas fa-user-md"></i> Doctor</li>
                                             <li><i class="fas fa-briefcase"></i> 10 Years</li>
-                                            <li><i class="fas fa-clock me-1"></i>03:45pm, 01 Jan 2021</li>
-                                            <li style="float: right;" class="mt-3 me-0"><a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a></li>
+                                            
                                         </ul>
-                                       
+                                        <div class="mt-2 text-right">
+                                            <a href="#"><input type="button" class="run-btn-bg" value="Run Search"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

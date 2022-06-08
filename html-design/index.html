@@ -9,9 +9,6 @@
     <!-- Favicon -->
     <link href="images/favicon.png" rel="shortcut icon" />
 
-    <!-- Google Font -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"> -->
-
     <!-- CSS Global Compulsory (Do not remove)-->
     <link rel="stylesheet" href="css/font-awesome/all.min.css" />
     <link rel="stylesheet" href="css/flaticon/flaticon.css" />
@@ -27,87 +24,35 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <style>
-        .homepage-slider{
+        /* .homepage-slider{
             display: none;
-        }
+        } */
         @media (max-width: 991px) {
             #nav-icon4 {
                 margin-top: 30px;
             }
         }
-        
-     
-        
-        #testing ul li a {
-            font-size: 16px;
-            line-height: 20px;
-            color: #000000;
-            font-weight: 500;
+        ol.num-ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 0;
         }
-        
-        #testing ul li a:hover {
-            color: #986c00;
+        .num-ol li {
+            counter-increment: item;
+            margin-bottom: 5px;
         }
-        
-        #testing ul li a:focus {
-            color: #986c00;
-        }
-        
-        #testing h2 {
+        .num-ol li:before {
+            margin-right: 10px;
+            content: counter(item);
+            background: #9c7100;
+            border-radius: 50%;
             color: #fff;
-            padding-top: 10px;
-        }
-        
-        .container-ul {
-            width: 100%;
-            margin: auto;
-            height: auto;
-            overflow: hidden;
-            padding: 5px 20px 0;
-        }
-        
-        
-        
-        .resume-col {
-            width: 100%;
-            margin: 15px auto;
-            height: 180px;
-            overflow: hidden;
-            padding: 0 5px;
-        }
-        
-        #recent-tabs .nav-tabs .nav-item .nav-link.active {
-            background: #443000;
-            border: 2px solid #443000;
-            color: #ffffff;
-        }
-        
-        #recent-tabs .nav-tabs .nav-item .nav-link {
-            margin-top: -38px;
-            background-color: #fff;
-        }
-        
-        .employers-list-logo img {
-            border: 2px solid #9c7100;
-            background: #fff;
-            height: 120px;
-        }
-        
-        .category-style-box {
-            background-color: #fff;
-            margin-bottom: 25px;
-            padding: 25px 0px 30px;
-            height: auto;
-            cursor: pointer;
-        }
-        
-        .category-style-box:hover {
-            -webkit-box-shadow: 0px 10px 25px -6px rgb(0 0 0 / 15%) !important;
-            box-shadow: 0px 10px 25px -6px rgb(0 0 0 / 15%) !important;
+            width: 1.4em;
+            text-align: center;
+            display: inline-block;
         }
     </style>
 </head>
-
 <body>
 
 <!--=================================
@@ -172,7 +117,7 @@ Header -->
 Header -->
 
 
-    <!--=================================
+<!--=================================
 Banner -->
     <section class="clearfix slider-banner homepage-slider" id="homepage-slider">
         <div class="mainSlider-wrapper">
@@ -203,111 +148,113 @@ Banner -->
                 </a>
             </div>
         </div>
-        <div class="container slider-form-wrapper">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 justify-content-center text-center">
-                    <h1 class="text-upper animated-08 slider-heading-main mb-4"><span class="text-primary">Change</span> is here</h1>
-                </div>
-                <div class="col-sm-12">
-                    <div class="slider-form">
-                        <div class="d-flex">
-                            <div class="col-lg-7 bg-white slider-border-left">
-                                <div class="job-search-column px-5 pb-5 pt-4">
-                                    <h2 class="slider-heading-dark">Find your next job fast.</h2>
-                                    <h3 class="slider-title-dark mb-2">Search by skills. View salaries. One-click-apply</h3>
-                                    <div>
-                                        <form class="form">
-                                            <ul class="list-unstyled d-flex mb-0">
-                                                <li class="job-search-item me-4">
-                                                    <div class="form-group mb-4 main-form-input">
-                                                        <div class="position-relative left-icon">
-                                                            <input type="text" class="form-control" name="job_title" placeholder="Key Skills">
-                                                            <i class="fas fa-pencil-alt"></i>
+        <div class="container">
+            <div class="slider-form-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 justify-content-center text-center">
+                        <h1 class="text-upper animated-08 slider-heading-main mb-4"><span class="text-primary">Change</span> is here</h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="slider-form">
+                            <div class="d-flex">
+                                <div class="col-lg-7 bg-white slider-border-left">
+                                    <div class="job-search-column px-5 pb-5 pt-4">
+                                        <h2 class="slider-heading-dark">Find your next job fast.</h2>
+                                        <h3 class="slider-title-dark mb-2">Search by skills. View salaries. One-click-apply</h3>
+                                        <div>
+                                            <form class="form">
+                                                <ul class="list-unstyled d-flex mb-0">
+                                                    <li class="job-search-item me-4">
+                                                        <div class="form-group mb-4 main-form-input">
+                                                            <div class="position-relative left-icon">
+                                                                <input type="text" class="form-control" name="job_title" placeholder="Key Skills">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
-                                                <li class="job-search-item">
-                                                    <div class="form-group mb-4 main-form-input">
-                                                        <div class="position-relative left-icon">
-                                                            <input type="text" class="form-control" name="job_title" placeholder="Job Function">
-                                                            <i class="fas fa-search"></i>
+                                                    </li>
+                                                    <li class="job-search-item">
+                                                        <div class="form-group mb-4 main-form-input">
+                                                            <div class="position-relative left-icon">
+                                                                <input type="text" class="form-control" name="job_title" placeholder="Job Function">
+                                                                <i class="fas fa-search"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
+                                                    </li>
 
-                                            </ul>
-                                            <ul class="list-unstyled d-flex mb-0">
-                                                <li class="job-search-item me-4">
-                                                    <div class="form-group main-form-input">
-                                                        <div class="position-relative left-icon">
-                                                            <input type="text" class="form-control" name="job_title" placeholder="Location">
-                                                            <i class="bi-geo-alt-fill"></i>
+                                                </ul>
+                                                <ul class="list-unstyled d-flex mb-0">
+                                                    <li class="job-search-item me-4">
+                                                        <div class="form-group main-form-input">
+                                                            <div class="position-relative left-icon">
+                                                                <input type="text" class="form-control" name="job_title" placeholder="Location">
+                                                                <i class="bi-geo-alt-fill"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
-                                                <li class="job-search-item">
-                                                    <div class="form-group main-form-input">
-                                                        <div class="position-relative left-icon">
-                                                            <input type="text" class="form-control" name="job_title" placeholder="Specialization">
-                                                            <i class="fas fa-plus-circle"></i>
+                                                    </li>
+                                                    <li class="job-search-item">
+                                                        <div class="form-group main-form-input">
+                                                            <div class="position-relative left-icon">
+                                                                <input type="text" class="form-control" name="job_title" placeholder="Specialization">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="main-btn mt-3 text-center"><a href="#" class="btn-primary">Find Jobs</a></div>
-                                        </form>
+                                                    </li>
+                                                </ul>
+                                                <div class="main-btn mt-3 text-center"><a href="#" class="btn-primary">Find Jobs</a></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 bg-primary slider-border-right">
+                                    <div class="slider-ul pt-4 mt-2">
+                                        <ul class="list-unstyled">
+                                            <li class="slider-heading">Make your Search <em><strong>easy</strong></em>.</li>
+                                            <li class="slider-title">Upload Your Resume</li>
+                                            <li class="slider-content">Don't have resume? Build one in 3 steps</li>
+                                            <li class="slider-btn mt-3"><a href="#" class="btn-primary-dark">Upload/Create Resume</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 bg-primary slider-border-right">
-                                <div class="slider-ul pt-4 mt-2">
-                                    <ul class="list-unstyled">
-                                        <li class="slider-heading">Make your Search <em><strong>easy</strong></em>.</li>
-                                        <li class="slider-title">Upload Your Resume</li>
-                                        <li class="slider-content">Don't have resume? Build one in 3 steps</li>
-                                        <li class="slider-btn mt-3"><a href="#" class="btn-primary-dark">Upload/Create Resume</a></li>
+                        </div>
+                        <div class="bg-dark-primrary slider-border-bottom">
+                            <div class="row" id="counter-div">
+                                <div class="col-sm-3">
+                                    <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
+                                        <li class="me-2"><img class="img-fluid" src="images/bg-icons/job-seekers.png" alt=""></li>
+                                        <li class="counter-text">
+                                            <span class="mb-0">1000+</span>
+                                            <label class="mb-0">Job Seekers</label>
+                                        </li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-dark-primrary slider-border-bottom">
-                        <div class="row" id="counter-div">
-                            <div class="col-sm-3">
-                                <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
-                                    <li class="me-2"><img class="img-fluid" src="images/bg-icons/job-seekers.png" alt=""></li>
-                                    <li class="counter-text">
-                                        <span class="mb-0">1000+</span>
-                                        <label class="mb-0">Job Seekers</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
-                                    <li class="me-2"><img class="img-fluid" src="images/bg-icons/recruiters.png" alt=""></li>
-                                    <li class="counter-text">
-                                        <span class="mb-0">1000+</span>
-                                        <label class="mb-0">Recruiters</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
-                                    <li class="me-2"><img class="img-fluid" src="images/bg-icons/suitcase.png" alt=""></li>
-                                    <li class="counter-text">
-                                        <span class="mb-0">5 Laks+</span>
-                                        <label class="mb-0">Job</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
-                                    <li class="me-2"><img class="img-fluid" src="images/bg-icons/search.png" alt=""></li>
-                                    <li class="counter-text">
-                                        <span class="mb-0">1 Laks+</span>
-                                        <label class="mb-0">Searches</label>
-                                    </li>
-                                </ul>
+                                <div class="col-sm-3">
+                                    <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
+                                        <li class="me-2"><img class="img-fluid" src="images/bg-icons/recruiters.png" alt=""></li>
+                                        <li class="counter-text">
+                                            <span class="mb-0">1000+</span>
+                                            <label class="mb-0">Recruiters</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
+                                        <li class="me-2"><img class="img-fluid" src="images/bg-icons/suitcase.png" alt=""></li>
+                                        <li class="counter-text">
+                                            <span class="mb-0">5 Laks+</span>
+                                            <label class="mb-0">Job</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="list-unstyled justify-content-center d-flex mb-0 align-items-center">
+                                        <li class="me-2"><img class="img-fluid" src="images/bg-icons/search.png" alt=""></li>
+                                        <li class="counter-text">
+                                            <span class="mb-0">1 Laks+</span>
+                                            <label class="mb-0">Searches</label>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -315,10 +262,10 @@ Banner -->
             </div>
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Banner -->
 
-    <!--=================================
+<!--=================================
 Featured Advertisers-->
     <section class="space-ptb" id="featured-advertisers">
         <div class="container">
@@ -332,14 +279,8 @@ Featured Advertisers-->
             </div>
             <div class="row justify-content-center bg-dark-primrary">
                 <div class="col-12 text-center">
-                    <div class="owl-carousel owl-nav-bottom-center " data-nav-arrow="true" data-nav-dots="false" data-items="5" data-md-items="4" data-sm-items="3" data-xs-items="3" data-xx-items="1" data-space="15" data-autoheight="true">
-                        <div class="item">
-                            <div class="employers-grid mb-3 mb-lg-0">
-                                <div class="employers-list-logo">
-                                    <img class="img-fluid" src="images/advertisers/brahamshakti.png" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="owl-carousel owl-nav-bottom-center " data-nav-arrow="true" data-nav-dots="false" data-items="5" data-md-items="4" data-sm-items="3" data-xs-items="3" data-xx-items="2" data-space="0" data-autoheight="true">
+                        
                         <div class="item">
                             <div class="employers-grid mb-3 mb-md-0">
                                 <div class="employers-list-logo">
@@ -412,11 +353,11 @@ Featured Advertisers-->
             <!--</div> -->
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Featured Advertisers -->
 
 
-    <!--=================================
+<!--=================================
 Jobs-listing -->
     <section class="space-ptb">
         <div class="container">
@@ -428,10 +369,10 @@ Jobs-listing -->
                     </div>
                 </div>
             </div>
-            <div class="row pb-5" style="border: 2px solid #443000; border-radius: 5px;" id="recent-tabs">
+            <div class="pb-lg-5 pb-4" style="border: 2px solid #443000; border-radius: 5px;" id="recent-tabs">
                 <div class="col-12">
-                    <div class="browse-job d-flex pb-2 pt-2 px-4">
-                        <div class="mb-4 mb-md-0" id="jobs-tabs">
+                    <div class="browse-job d-flex pb-lg-2 pt-lg-2 px-lg-4">
+                        <div class="mb-lg-4 mb-md-0" id="jobs-tabs">
                             <ul class="nav nav-tabs justify-content-center d-flex" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="recent-tab" data-bs-toggle="tab" href="#recent-jobs" role="tab" aria-controls="recent-jobs" aria-selected="true">Recent Jobs</a>
@@ -761,7 +702,7 @@ Jobs-listing -->
                                 </div>
                             </div>
                             <div class="row" style="justify-content: space-between;">
-                                <div class="col-12 justify-content-center d-flex mt-md-3 mt-3 main-btn-dark">
+                                <div class="col-12 justify-content-center d-flex mt-md-3 mt-0 main-btn-dark">
                                     <a class="btn btn-primary-dark " href="recent-jobs.html" target="_blank">View More</a>
                                 </div>
                             </div>
@@ -1081,7 +1022,7 @@ Jobs-listing -->
                                 </div>
                             </div>
                             <div class="row" style="justify-content: space-between;">
-                                <div class="col-12 justify-content-center d-flex mt-md-3 mt-3 main-btn-dark">
+                                <div class="col-12 justify-content-center d-flex mt-md-3 mt-0 main-btn-dark">
                                     <a class="btn btn-primary-dark " href="featured-jobs.html" target="_blank">View More</a>
                                 </div>
                             </div>
@@ -1098,10 +1039,10 @@ Jobs-listing -->
             </div>
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Jobs-listing -->
 
-    <!--=================================
+<!--=================================
 Services we offer -->
     <section class="space-ptb bg-holder theme-bg bg-primary" id="upgraded-sec">
         <div class="container">
@@ -1184,10 +1125,10 @@ Services we offer -->
 
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Services we offer -->
 
-    <!--=================================
+<!--=================================
 Recruiter Attention -->
     <section class="bg-blue">
         <div class="container">
@@ -1198,11 +1139,11 @@ Recruiter Attention -->
                             <li class="recruiter-heading">Job Seeker</li>
                             <li class="recruiter-title">Accelerate Your Job Search</li>
                             <li class="recruiter-content">SERVICES TO HELP YOU FIND JOB FASTER</li>
-                            <li class="recruiter-btn justify-content-start mt-2"><a data-bs-toggle="modal" data-bs-target="#premuimpartnermodal">Be a Premium Partner</a></li>
+                            <li class="recruiter-btn justify-content-lg-start mt-2"><a data-bs-toggle="modal" data-bs-target="#premuimpartnermodal">Be a Premium Partner</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 get-col">
                     <div class="recruiter-image-block">
                         <img class="img-fluid" src="images/recruiter.png" alt="">
                         <div class="recruiter">
@@ -1215,11 +1156,11 @@ Recruiter Attention -->
             </div>
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Recruiter Attention -->
 
-    <!--=================================
-testimonial -->
+<!--=================================
+Testimonial Starts-->
     <section class="space-ptb overflow-hidden" id="testimonial">
         <div class="container-fluid">
             <div class="row">
@@ -1233,7 +1174,7 @@ testimonial -->
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <!--<div class="owl-carousel owl-nav-bottom-center " data-nav-arrow="true" data-nav-dots="false" data-items="5" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xx-items="1" data-space="15" data-autoheight="true">-->
-                    <div class="owl-carousel testimonial-center owl-nav-bottom-center" data-nav-arrow="true" data-items="4" data-md-items="3" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="0" data-autoheight="true">
+                    <div class="owl-carousel testimonial-center owl-nav-bottom-center" data-nav-arrow="true" data-items="4" data-md-items="3" data-sm-items="3" data-xs-items="2" data-xx-items="1" data-space="0" data-autoheight="true">
                         <div class="item">
                             <div class="testimonial-item-02">
                                 <div class="testimonial-author">
@@ -1347,12 +1288,12 @@ testimonial -->
             </div>
         </div>
     </section>
-    <!--=================================
-testimonial -->
+<!--=================================
+Testimonial Ends-->
 
 
     <!--=================================
-Category-style -->
+Browse By Category Start -->
     <section class="space-ptb bg-light">
         <div class="container">
             <div class="row">
@@ -1465,10 +1406,10 @@ Category-style -->
         </div>
     </section>
     <!--=================================
-Category-style -->
+Browse By Category Ends-->
 
 
-    <!--=================================
+<!--=================================
 Browse Hundreds of Jobs -->
     <section class="space-ptb" id="mobile-app">
         <div class="container">
@@ -1488,14 +1429,12 @@ Browse Hundreds of Jobs -->
                                 <img class="img-fluid" src="images/mobile-app.png" alt="">
                             </div>
                             <div class="col-lg-6">
-                                <div class="px-md-5 px-4 pt-5 pt-lg-0">
-
-
+                                <div class="px-md-5 px-lg-4 pt-4 pt-lg-0">
                                     <div class="row category-style pb-2">
                                         <div class="col-md-12 col-sm-12 mb-3">
                                             <div class="feature-info  d-flex  h-100 mb-lg-0 mb-4">
-                                                <div class="feature-info-icon mb-2 me-3">
-                                                    <img class="img-fluid ps-2" src="images/icons/account.png" alt="">
+                                                <div class="feature-info-icon mb-2 me-3 me-lg-3">
+                                                    <img class="img-fluid ps-md-2" src="images/icons/account.png" alt="">
                                                 </div>
                                                 <div class="feature-info-content">
                                                     <h5 class="text-black info-heading">Create Your Account</h5>
@@ -1505,8 +1444,8 @@ Browse Hundreds of Jobs -->
                                         </div>
                                         <div class="col-md-12 col-sm-12 mb-2">
                                             <div class="feature-info  d-flex  h-100 mb-lg-0 mb-4">
-                                                <div class="feature-info-icon mb-2 me-3">
-                                                    <img class="img-fluid ps-3" src="images/icons/vacancy.png" alt="">
+                                                <div class="feature-info-icon mb-2 me-3 me-lg-3">
+                                                    <img class="img-fluid ps-md-3" src="images/icons/vacancy.png" alt="">
                                                 </div>
                                                 <div class="feature-info-content">
                                                     <h5 class="text-black info-heading">Find Your Vacancy</h5>
@@ -1516,8 +1455,8 @@ Browse Hundreds of Jobs -->
                                         </div>
                                         <div class="col-md-12 col-sm-12 mb-2">
                                             <div class="feature-info  d-flex  h-100 mb-lg-0 mb-4">
-                                                <div class="feature-info-icon mb-2 me-3">
-                                                    <img class="img-fluid ps-2" src="images/icons/job.png" alt="">
+                                                <div class="feature-info-icon mb-2 me-3 me-lg-3">
+                                                    <img class="img-fluid ps-md-2" src="images/icons/job.png" alt="">
                                                 </div>
                                                 <div class="feature-info-content">
                                                     <h5 class="text-black info-heading">Get A Job</h5>
@@ -1550,12 +1489,12 @@ Browse Hundreds of Jobs -->
             </div>
         </div>
     </section>
-    <!--=================================
+<!--=================================
 Browse Hundreds of Jobs -->
 
-    <!--=================================
-Blog -->
-    <section class="space-ptb bg-light" id="homepage-news">
+<!--=================================
+Latest News Start-->
+    <section class="space-ptb bg-light homepage-news">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -1566,9 +1505,9 @@ Blog -->
                 </div>
             </div>
             <div class="row">
-                <div class="owl-carousel owl-nav-bottom-center" data-nav-arrow="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="0" data-autoheight="true">
-                    <div class="row pb-3 me-4">
-                        <div class="col-lg-4 mb-lg-0 mb-4">
+                <div class="owl-carousel owl-nav-bottom-center" data-nav-arrow="false" data-items="4" data-md-items="3" data-sm-items="2" data-xs-items="2" data-xx-items="1" data-space="15" data-autoheight="true">
+                    
+                        
                             <div class="blog-post text-center">
                                 <div class="blog-post-image">
                                     <img class="img-fluid" src="images/blog/01.jpg" alt="">
@@ -1576,7 +1515,7 @@ Blog -->
                                 <div class="blog-post-content">
                                     <div class="blog-post-details">
                                         <div class="blog-post-category">
-                                            <a class="mb-1" href="#">Recruitment</a>
+                                            <a href="#">Recruitment</a>
                                         </div>
                                         <div class="blog-post-title">
                                             <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
@@ -1601,8 +1540,8 @@ Blog -->
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 mb-lg-0 mb-4">
+                        
+                       
                             <div class="blog-post text-center">
                                 <div class="blog-post-image">
                                     <img class="img-fluid" src="images/blog/01.jpg" alt="">
@@ -1610,7 +1549,7 @@ Blog -->
                                 <div class="blog-post-content">
                                     <div class="blog-post-details">
                                         <div class="blog-post-category">
-                                            <a class="mb-1" href="#">Recruitment</a>
+                                            <a href="#">Recruitment</a>
                                         </div>
                                         <div class="blog-post-title">
                                             <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
@@ -1635,8 +1574,8 @@ Blog -->
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
+                       
+                        
                             <div class="blog-post text-center">
                                 <div class="blog-post-image">
                                     <img class="img-fluid" src="images/blog/01.jpg" alt="">
@@ -1644,7 +1583,7 @@ Blog -->
                                 <div class="blog-post-content">
                                     <div class="blog-post-details">
                                         <div class="blog-post-category">
-                                            <a class="mb-1" href="#">Recruitment</a>
+                                            <a href="#">Recruitment</a>
                                         </div>
                                         <div class="blog-post-title">
                                             <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
@@ -1669,24 +1608,24 @@ Blog -->
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                       
+                    
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 justify-content-center d-flex mt-md-3 mt-3 main-btn">
+                <div class="col-12 justify-content-center d-flex mt-md-4 mt-4 main-btn">
                     <a class="btn btn-primary" href="news-listing.html">View More</a>
                 </div>
             </div>
         </div>
     </section>
-    <!--=================================
-Blog -->
+<!--=================================
+Latest News Ends-->
 
 
-    <!--=================================
-Footer-->
+<!--=================================
+Footer Start-->
     <footer class="footer mt-0">
         <div class="container">
 
@@ -1739,7 +1678,7 @@ Footer-->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 pt-3">
+                <div class="col-lg-4 pt-lg-3">
                     <div class="footer-contact-info bg-holder">
                         <ul class="list-unstyled mb-0">
                             <li>
@@ -1797,8 +1736,8 @@ Footer-->
             </div>
         </div>
     </footer>
-    <!--=================================
-Footer-->
+<!--=================================
+Footer Ends-->
 
 <!--=================================
 Back To Top-->
@@ -1815,7 +1754,7 @@ testing Modal Popup -->
             <div class="modal-content">
                 <div class="modal-header" id="popup-list-desc" style="background-image: url(images/popup-banner.png);">
                     <div class="job-list" style="justify-content: space-between;">
-                        <div class="job-list-option px-4">
+                        <div class="job-list-option px-lg-4 px-2">
                             <ul class="list-unstyled desc-header mb-0">
                                 <li>
                                     <h5><a href="#">Marketing</a></h5>
@@ -1836,21 +1775,20 @@ testing Modal Popup -->
                             <!--  <li><a class="btn btn-primary d-grid" href="login.html"> Apply Now</a></li>-->
                             <!--</ul>-->
                         </div>
-                        <div class="job-list-option  px-4"><a class="btn desc-btn btn-primary-dark d-grid" href="login.html"> Apply Now</a></div>
+                        <div class="job-list-option  px-lg-4 px-2"><a class="btn desc-btn btn-primary-dark d-grid" href="login.html"> Apply Now</a></div>
 
                     </div>
                     <div style="position: relative;">
                         <button type="button" class="btn-close popup-btn" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;top: -182px;right: 13px;opacity: 1;"></button>
                     </div>
                 </div>
-                <div class="modal-body p-4">
+                <div class="modal-body p-md-4 p-3">
                     <div class="login-register">
                         <div id="jobDescriptionText" class="jobDescriptionText">
-                            <h1>Job Details</h1>
-                            <h2>Description</h2>
+                            <h2>Job Details</h2>
+                            <h3>Description</h3>
                             <p class="description-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice</p>
-
                             <p>Job Type: <span>Full-time</span></p>
                             <p>Schedule: <span>Day Shift</span></p>
                             <p>Qualification Required: <span>MD/DM</span></p>
@@ -1869,10 +1807,10 @@ testing Modal Popup -->
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer p-4" id="popup-list-desc">
+                <div class="modal-footer p-lg-4" id="popup-list-desc">
                     <div class="desc-footer">
-                        <h1>APPLY RIGHT WAY</h1>
-                        <h2>Think you're the perfect candidate?</h2>
+                        <h4>APPLY RIGHT WAY</h4>
+                        <h5>Think you're the perfect candidate?</h5>
                     </div>
                     <div><a class="btn btn-primary-dark desc-btn" href="login.html"> Apply Now</a></div>
                 </div>
@@ -1895,13 +1833,23 @@ Premuim Partner Modal Popup -->
                 <div class="modal-body p-4">
                     <div class="login-register">
                         <div id="jobDescriptionText" class="jobDescriptionText pb-3">
-                            <h1>Benefits</h1>
-                            <p>1. Candidate profile will be visible on portal's home page.</p>
-                            <p>2. If any recruiter searches any of the specialization then upgraded resumes will be display on top.</p>
-                            <p>3. Jobseeker can access the live sessions.</p>
-                            <p>4. Posting of equipment & space will be shown on top.</p>
-                            <p>5. Free notification will be send by admin related to his/her profile regarding job.</p>
-                            <p>6. Get best Packages in the industry.</p>
+                            <h2>Benefits</h2>
+                            <ul class="bullets">
+                                <li>Candidate profile will be visible on portal's home page.</li>
+                                <li>If any recruiter searches any of the specialization then upgraded resumes will be display on top.</li>
+                                <li>Jobseeker can access the live sessions.</li>
+                                <li>Posting of equipment & space will be shown on top.</li>
+                                <li>Free notification will be send by admin related to his/her profile regarding job.</li>
+                                <li>Get best Packages in the industry.</li>
+                            </ul>
+                            <!-- <ol class="num-ol">
+                                <li>Candidate profile will be visible on portal's home page.</li>
+                                <li>If any recruiter searches any of the specialization then upgraded resumes will be display on top.</li>
+                                <li>Jobseeker can access the live sessions.</li>
+                                <li>Posting of equipment & space will be shown on top.</li>
+                                <li>Free notification will be send by admin related to his/her profile regarding job.</li>
+                                <li>Get best Packages in the industry.</li>
+                            </ol> -->
                         </div>
                     </div>
                 </div>
@@ -1924,8 +1872,9 @@ Browse by category Modal Popup -->
                     <div class="tab-content click-tab-bg">
                         <div class="tab-pane fade active show" id="home-1" role="tabpanel" aria-labelledby="home-tab-1">
                             <div class="row">
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
+                                        
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="category-listing.html" target="_blank"><span class="category-count"><img class="img-fluid" src="images/docladder-icons/Anatomy.png" alt=""></span><h6 class="category-title">Anatomy </h6></a></li>
                                             <li><a href="#"><span class="category-count"><img class="img-fluid" src="images/docladder-icons/anesthesia.png" alt=""></span><h6 class="category-title">Anesthetist </h6></a></li>
@@ -1947,7 +1896,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><span class="category-count"><img class="img-fluid" src="images/docladder-icons/gastro-surgeon.png" alt=""></span><h6 class="category-title">Gastro Surgeon </h6></a></li>
@@ -1969,7 +1918,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><span class="category-count"><img class="img-fluid" src="images/docladder-icons/nuclear.png" alt=""></span><h6 class="category-title">Pathologist </h6></a></li>
@@ -1995,7 +1944,7 @@ Browse by category Modal Popup -->
                         </div>
                         <div class="tab-pane fade" id="profile-1" role="tabpanel" aria-labelledby="profile-tab-2">
                             <div class="row">
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.Sc </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-1.png" alt=""></span> </a></li>
@@ -2004,7 +1953,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.Sc </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-2.jpg" alt=""></span> </a></li>
@@ -2013,7 +1962,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.Sc </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-1.png" alt=""></span> </a></li>
@@ -2026,7 +1975,7 @@ Browse by category Modal Popup -->
                         </div>
                         <div class="tab-pane fade" id="contact-1" role="tabpanel" aria-labelledby="contact-tab-3">
                             <div class="row">
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.A.M.S </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-2.jpg" alt=""></span> </a></li>
@@ -2035,7 +1984,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 border-end mb-3 mb-md-0">
+                                <div class="col-sm-4 border-end mb-3 mb-md-0">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.A.M.S </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-2.jpg" alt=""></span> </a></li>
@@ -2044,7 +1993,7 @@ Browse by category Modal Popup -->
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="category-style-02">
                                         <ul class="list-unstyled mb-0">
                                             <li><a href="#"><h6 class="category-title">B.A.M.S </h6> <span class="category-count"><img class="img-fluid rounded-circle" src="images/tab-imgs/t-2.jpg" alt=""></span> </a></li>

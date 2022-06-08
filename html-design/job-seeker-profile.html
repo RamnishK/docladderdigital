@@ -48,7 +48,7 @@ Header -->
           <li class="nav-item">
             <a class="nav-link" href="index.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
           </li>
-          <li class="nav-item dropdown ">
+          <li class="nav-item dropdown active">
                <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
@@ -75,7 +75,7 @@ Header -->
             </ul>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="#"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
+               <a class="nav-link" href="premium-job-seeker-payment.html"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
           </li>
           <li class="nav-item">
                <a class="nav-link" href="job-seeker-search-recruiter.html"  aria-haspopup="true" aria-expanded="false">Search Recruiter</a>
@@ -125,6 +125,9 @@ Register -->
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" id="tab-03" data-bs-toggle="tab" href="#changePassword" role="tab" aria-controls="changePassword" aria-selected="false"><i class="login-icon fas fa-upload"></i> Upload Resume</a>
+                            </li>
+                            <li class="nav-item premium-btn">
+                              <a class="" href="premium-job-seeker-payment.html" >Get Premium</a>
                             </li>
                           </ul>
                         </div>
@@ -297,18 +300,18 @@ Register -->
                                             <label>Current Designation</label>
                                             <input type="text" class="form-control" value="Doctor">
                                         </div>
-                                        <div class="form-group col-md-6 mb-3">
+                                        <div class="form-group col-md-6 mb-3 mb-lg-2">
                                             <label>Current CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
-                                            <div class="input-group mb-2">
+                                            <div class="input-group">
                                               <div class="input-group-prepend d-flex">
                                                 <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
                                               </div>
                                               <input type="text" class="form-control" value="2.5">
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-6 mb-3">
+                                        <div class="form-group col-md-6 mb-3 mb-lg-2">
                                             <label>Expected CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
-                                            <div class="input-group mb-2">
+                                            <div class="input-group">
                                               <div class="input-group-prepend d-flex">
                                                 <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
                                               </div>
@@ -422,7 +425,10 @@ Register -->
                                         </div>
                                         <div class="form-group col-md-12 mb-3">
                                             <label>Add Photo</label>
-                                            <input type="file" id="file"  class="upload-photo form-control" name="myfiles[]" multiple="">
+                                            <div class="input-group choose-file">
+                                              <input type="file" class="form-control" id="file-upload" multiple required />
+                                              <label for="file-upload" class="input-group-text" id="file-upload-filename">Choose file </label>
+                                            </div>
                                         </div>
                                         <div class="text-center">
                                         <div class="form-group col-md-12 mt-3 mb-4">
@@ -580,6 +586,23 @@ Javascript -->
 
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>
+    <script>
+      var input = document.getElementById( 'file-upload' );
+        var infoArea = document.getElementById( 'file-upload-filename' );
 
+        input.addEventListener( 'change', showFileName );
+
+        function showFileName( event ) {
+          
+          // the change event gives us the input it occurred in 
+          var input = event.srcElement;
+          
+          // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+          var fileName = input.files[0].name;
+          
+          // use fileName however fits your app best, i.e. add it into a div
+          infoArea.textContent = 'File name: ' + fileName;
+        }
+    </script>
 </body>
 </html>

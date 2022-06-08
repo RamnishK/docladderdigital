@@ -107,7 +107,7 @@ Header -->
 Header -->
 
 <!--=================================
-Register -->
+Register -->w
 <section class="space-ptb-outer bg-light recruiter-job-posting" >
   <div class="container">
         <div class="row justify-content-center">
@@ -125,19 +125,19 @@ Register -->
                                 <div class="box-body">
                                     <div class="row bg-white login-register justify-content-center">
                                         <div class="form-group col-md-12 mb-3">
-                                            <label class="mb-2">Product name</label>
+                                            <label>Product name</label>
                                             <input type="text" class="form-control" value="" placeholder="Enter a Title">
                                         </div>
                                         <div class="form-group col-md-12 select-border mb-3">
-                                          <label class="mb-2">Product Image </label>
+                                          <label>Product Image </label>
                                           <div class="input-group choose-file">
-                                              <input type="file" class="form-control" id="inputGroupFile02">
-                                              <label class="input-group-text" for="inputGroupFile02">Choose file</label>
+                                            <input type="file" class="form-control" id="file-upload" multiple required />
+                                            <label for="file-upload" class="input-group-text" id="file-upload-filename">Choose file </label>
                                           </div>
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">Price<em class="text-danger">*</em></label>
-                                            <div class="input-group mb-2">
+                                            <label>Price<em class="text-danger">*</em></label>
+                                            <div class="input-group">
                                               <div class="input-group-prepend d-flex input-right-border">
                                                 <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
                                               </div>
@@ -145,8 +145,8 @@ Register -->
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">Offer Price<em class="text-danger">*</em></label>
-                                            <div class="input-group mb-2">
+                                            <label>Offer Price<em class="text-danger">*</em></label>
+                                            <div class="input-group">
                                               <div class="input-group-prepend d-flex input-right-border">
                                                 <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
                                               </div>
@@ -154,7 +154,7 @@ Register -->
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6 select-border mb-3">
-                                            <label class="mb-2">State<em class="text-danger">*</em></label>
+                                            <label>State<em class="text-danger">*</em></label>
                                             <select class="form-control basic-select">
                                               <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                                               <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -194,7 +194,7 @@ Register -->
                                             </select>
                                         </div>
                                         <div class="form-group col-md-6 select-border mb-3">
-                                            <label class="mb-2">City<em class="text-danger">*</em></label>
+                                            <label>City<em class="text-danger">*</em></label>
                                             <select class="form-control basic-select">
                                                 <option value="AL">Alabama</option>
                                                 <option value="AK">Alaska</option>
@@ -250,34 +250,34 @@ Register -->
                                             </select>
                                         </div>
                                         <div class="form-group col-md-12 mb-3">
-                                            <label class="mb-2">Product Description<em class="text-danger">*</em></label>
+                                            <label>Product Description<em class="text-danger">*</em></label>
                                             <textarea class="form-control" rows="2" maxlength="2000"></textarea>
                                         </div>
                                         <div class="form-group col-md-12 mb-3">
-                                            <label class="mb-2">Year of Manufacturing</label>
+                                            <label>Year of Manufacturing</label>
                                             <input type="text" class="form-control" value="">
                                         </div>
                                         <div class="form-group col-md-12 select-border mb-3">
-                                          <label class="mb-2">Product Video </label>
-                                          <div class="input-group mb-3 choose-file">
-                                              <input type="file" class="form-control" id="inputGroupFile02">
-                                              <label class="input-group-text" for="inputGroupFile02">Choose file</label>
+                                          <label>Product Video </label>
+                                          <div class="input-group choose-file">
+                                            <input type="file" class="form-control" id="file-upload-video" multiple required />
+                                            <label for="file-upload-video" class="input-group-text" id="file-upload-filename-video">Choose file </label>
                                           </div>
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">Area(sq. ft)</label>
+                                            <label>Area(sq. ft)</label>
                                             <input type="text" class="form-control" value="">
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">Concerned Person Name</label>
+                                            <label>Concerned Person Name</label>
                                             <input type="text" class="form-control" value="">
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">Contact</label>
+                                            <label>Contact</label>
                                             <input type="tel" class="form-control" value="">
                                         </div>
                                         <div class="form-group col-md-6 mb-3">
-                                            <label class="mb-2">E-mail address</label>
+                                            <label>E-mail address</label>
                                             <input type="email" class="form-control" value="">
                                         </div>
                                         <div class="text-center">
@@ -437,6 +437,42 @@ Javascript -->
 
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>
+    <script>
+      var input = document.getElementById( 'file-upload' );
+        var infoArea = document.getElementById( 'file-upload-filename' );
+
+        input.addEventListener( 'change', showFileName );
+
+        function showFileName( event ) {
+          
+          // the change event gives us the input it occurred in 
+          var input = event.srcElement;
+          
+          // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+          var fileName = input.files[0].name;
+          
+          // use fileName however fits your app best, i.e. add it into a div
+          infoArea.textContent = 'File name: ' + fileName;
+        }
+    </script>
+    <script>
+      var inputA = document.getElementById( 'file-upload-video' );
+        var infoAreaA = document.getElementById( 'file-upload-filename-video' );
+
+        inputA.addEventListener( 'change', showFileName );
+
+        function showFileName( event ) {
+          
+          // the change event gives us the input it occurred in 
+          var inputA = event.srcElement;
+          
+          // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+          var fileName = inputA.files[0].name;
+          
+          // use fileName however fits your app best, i.e. add it into a div
+          infoAreaA.textContent = 'File name: ' + fileName;
+        }
+    </script>
 
 </body>
 </html>

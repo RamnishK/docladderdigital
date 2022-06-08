@@ -24,13 +24,7 @@
 
     <!-- Template Style -->
     <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/responsive.css" />
-        
-    <style>
-      #piechart {
-          min-height:300px;
-       }
-    </style>
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
 
@@ -160,29 +154,14 @@ Register -->
                                     <table class="table table-lg table-hover mb-0">
                                         <tbody>
                                             <tr>
-                                                <td>Total Post Jobs </td>
-                                                <td>-</td>
-                                                <td>1000</td>
-                                            </tr>
-                                            <tr>
                                                 <td>Recent Job</td>
                                                 <td>-</td>
-                                                <td>100</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Recent Job used/ Total Recent Jobs</td>
-                                                <td>-</td>
-                                                <td>200</td>
+                                                <td>100/1000</td>
                                             </tr>
                                             <tr>
                                                 <td>Featured Jobs</td>
                                                 <td>-</td>
-                                                <td>100</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Featured used/ Total Featured Jobs</td>
-                                                <td>-</td>
-                                                <td>900</td>
+                                                <td>100/1000</td>
                                             </tr>
                                             <tr>
                                                 <td>Register Date </td>
@@ -207,19 +186,14 @@ Register -->
                                     <table class="table table-lg table-hover mb-0">
                                         <tbody>
                                             <tr>
-                                                <td>Total Resumes</td>
+                                                <td>Number of Resumes</td>
                                                 <td>-</td>
-                                                <td>1000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Used Resumes</td>
-                                                <td>-</td>
-                                                <td>200</td>
+                                                <td>200/1000</td>
                                             </tr>
                                             <tr>
                                                 <td>Upgraded Resumes</td>
                                                 <td>-</td>
-                                                <td>50</td>
+                                                <td>50/100</td>
                                             </tr>
                                             <tr>
                                                 <td>Register Date </td>
@@ -238,22 +212,7 @@ Register -->
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="resume-services-info-chart">
-                                <div align="center">
-                                    <div id="piechart-2"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="job-posting-info-chart">
-                                <div align="center">
-                                    <div id="piechart"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="row pt-3">
                         <div class="col-lg-6">
                             <div class="job-posting-info  pt-4">
@@ -595,64 +554,6 @@ Javascript -->
 
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-              google.charts.load('current', {'packages':['corechart']});
-              google.charts.setOnLoadCallback(drawChart);
-              function drawChart() {
-        
-                var data = google.visualization.arrayToDataTable([
-                  ['Jobs', '1000'],
-                  ['Remaining Jobs',    900],
-                  ['Used Jobs',      100]
-                ]);
-
-                var options = {
-                  pieSliceText: 'Jobs',
-                  slices: {  0: {color: '#9c7100', offset: 0.2},   
-                                1: {color: '#443000'},
-                                2: {color: '#9c7100'},            
-                      }, 
-        
-                  
-                   height: '350',
-                   chartArea: {left:50, top:30, width:'100%', height:'100%'},
-                };
-        
-                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                chart.draw(data, options);
-                
-              }
-
-    </script>
-    <script type="text/javascript">
-              google.charts.load('current', {'packages':['corechart']});
-              google.charts.setOnLoadCallback(drawChart);
-              function drawChart() {
-        
-                var data = google.visualization.arrayToDataTable([
-                  ['Jobs', '1000'],
-                  ['Remaining Jobs',    900],
-                  ['Used Jobs',      100]
-                ]);
-
-                var options = {
-                  pieSliceText: 'Jobs',
-                  slices: {  0: {color: '#13648c', offset: 0.2},   
-                                1: {color: '#64aae6'},
-                                2: {color: '#64aae6'},            
-                      }, 
-        
-                  
-                   height: '350',
-                   chartArea: {left:50, top:30, width:'100%', height:'100%'},
-                };
-        
-                var chart = new google.visualization.PieChart(document.getElementById('piechart-2'));
-                chart.draw(data, options);
-              }
-
-    </script>
 
 </body>
 </html>
