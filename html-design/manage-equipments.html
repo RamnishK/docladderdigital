@@ -506,16 +506,20 @@ View Equipment Details Modal Popup -->
                         </div>
                         <div class="form-group col-md-12 select-border mb-3">
                           <label>Product Image </label>
-                          <div class="input-group choose-file">
+                          <div class="input-group choose-file mb-2">
                               <input type="file" class="form-control" id="inputGroupFile02">
-                              <label class="input-group-text" for="inputGroupFile02">Choose file</label>
+                              <label class="input-group-text" for="inputGroupFile02"></label>
+                          </div>
+                          <div class="cover-photo cover-edit">
+                            <img class="img-fluid" src="images/bg/cover-bg.png" alt="">
+                            <i class="fas fa-times-circle cover-photo-icon"></i>
                           </div>
                         </div>
                         <div class="form-group col-md-12 mb-3">
                             <label>Product Price<em class="text-danger">*</em></label>
                             <div class="input-group">
                               <div class="input-group-prepend d-flex input-right-border">
-                                <div class="input-group-text"></div>
+                                <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
                               </div>
                               <input type="text" class="form-control" placeholder="" value="10000"> 
                             </div>
@@ -627,9 +631,17 @@ View Equipment Details Modal Popup -->
                         </div>
                         <div class="form-group col-md-12 select-border mb-3">
                           <label>Product Video </label>
-                          <div class="input-group choose-file">
+                          <div class="input-group choose-file mb-2">
                               <input type="file" class="form-control" id="inputGroupFile02">
                               <label class="input-group-text" for="inputGroupFile02">Choose file</label>
+                          </div>
+                          <div class="cover-photo cover-edit">
+                            <video poster="images/equipments-imgs/product-video-img.png" controls="" class="mt-4">
+                              <source src="images/video/equipment.mp4" type="video/mp4">
+                              <source src="images/video/equipment.mp4" type="video/ogg">
+                              Your browser does not support the video tag.
+                           </video>
+                            <i class="fas fa-times-circle cover-photo-icon"></i>
                           </div>
                         </div>
                         <div class="form-group col-md-6 mb-3">
