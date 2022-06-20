@@ -307,9 +307,6 @@ Responsive
     #advance-search {
         width: 45%;
     }
-    .recruiter-btn li input{
-        width: 100px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -419,8 +416,15 @@ Responsive
         line-height: 25px;
     }
     .recruiter-btn li input {
-        width: 75px;
+        width: 65px;
         font-size: 16px;
+        padding: 3px 10px;
+    }
+    .search-result-header{
+        padding: 30px 20px 0px;
+    }
+    .moreless-button{
+        padding: 10px;
     }
 }
 
@@ -1124,9 +1128,9 @@ Responsive
     .space-ptb-outer {
         padding: 50px 0 50px;
     }
-    .main-site-title{
+    /* .main-site-title{
         font-size: 20px;
-    }
+    } */
     
     .main-sub-title span{
         font-size: 20px;
@@ -1177,9 +1181,9 @@ Responsive
     .user-dashboard-table .table {
         width: 800px;
     }
-    .sub-title-bg span{
+    /* .sub-title-bg span{
         padding: 6px 30px;
-    }
+    } */
     #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog, #ViewJobForm .modal-dialog {
         height: 300px;
     }
@@ -1188,6 +1192,66 @@ Responsive
     }
     .delete-btn .btn {
         font-size: 18px;
+    }
+    .main-site-title{
+        font-size: 22px;
+    }
+    .saved-search-table{
+        overflow-x: auto;
+    }
+    .saved-search-table table{
+        width: 1000px;
+    }
+    .saved-search-table table.table tr td{
+        padding: 0.5rem 1rem;
+    }
+    .saved-search-table table tr td:first-child {
+        width: auto;
+    }
+    .cand-title{
+        font-size: 26px;
+    }
+    .search-result-header{
+        padding: 20px 15px 0px;
+    }
+    .search-result-header ul.listing li {
+        margin-right: 10px;
+    }
+    .social-shares li img {
+        width: 22px;
+        height: 22px;
+    }
+    .social-shares li{
+        margin-right: 5px!important;
+    }
+    .social-shares li:last-child(){
+        margin-right: 0!important;
+    }
+    .social-shares h3, .search-result-header .form-group label{
+        font-size: 16px;
+    }
+    .search-result-header .form-group label{
+        margin-right: 5px;
+    }
+    .recruiter-job-posting .select2-container--default .select2-selection--single, .job-seeker-posting .select2-container--default .select2-selection--multiple{
+        padding: 4px 15px;
+    }
+    .saved-search-btn{
+        margin-left: 0;
+        padding: 1px 8px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+        right: 12px;
+        top: 9px;
+    }
+    .moreless-button{
+        padding: 10px;
+    }
+    .search-results-body{
+        padding: 25px 20px;
+    }
+    .search-result-list{
+        padding: 20px 20px 10px;
     }
     
 }
@@ -1620,15 +1684,15 @@ Responsive
     #equipment-features .feature-info {
         margin: 0 20px;
     }
-    .main-site-title {
+    /* .main-site-title {
         font-size: 18px;
-    }
+    } */
     .main-sub-title span {
         font-size: 18px;
     }
-    .sub-title-bg span {
+    /* .sub-title-bg span {
         padding: 6px 20px;
-    }
+    } */
     .recruiter-homepage .nav-tabs.nav-tabs-02 .nav-item .nav-link.active{
         font-size: 18px;
         padding: 6px 15px;
@@ -1668,13 +1732,18 @@ Responsive
     .box-header h4 {
         font-size: 18px;
     }
-    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog {
+    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog, #ViewSpaceForm .modal-dialog, #ViewSpaceForm .modal-dialog {
         width: 500px;
     }
     .main-btn {
         font-size: 16px;
     }
-    
+    .saved-search-table input {
+        font-size: 16px;
+    }
+    .search-results-body{
+        padding: 30px 20px;
+    }
 }
 
 @media screen and (max-device-width: 575px) {
@@ -2584,15 +2653,15 @@ Responsive
     .main-btn {
         font-size: 16px;
     }
-    .main-site-title {
+    /* .main-site-title {
         font-size: 16px;
-    }
+    } */
     .select-all-bg .form-check-input {
         margin-top: 2px;
     }
-    .sub-title-bg span {
+    /* .sub-title-bg span {
         padding: 6px 10px;
-    }
+    } */
     .select-all-bg{
         padding: 3px 6px;
     }
@@ -2614,7 +2683,7 @@ Responsive
     .del-all {
         font-size: 14px;
     }
-    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog {
+    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog, #ViewSpaceForm .modal-dialog {
         width: 400px;
         height: 200px;
         margin: auto;
@@ -2633,6 +2702,15 @@ Responsive
     }
     #deletepopup .modal-dialog{
         max-width: 250px;
+    }
+    .main-site-title{
+        font-size: 20px;
+    }
+    .sub-title-bg span{
+        padding: 6px 30px;
+    }
+    .box-header{
+        padding: 10px 20px;
     }
 }
 
@@ -2723,11 +2801,12 @@ Responsive
         width: 0.8rem;
         height: 0.8rem;
     }
-    .main-site-title {
+    .select2-container--default .select2-selection--single .select2-selection__rendered, .form-control::placeholder {
         font-size: 14px;
+        line-height: 26px;
     }
-    .sub-title-bg span {
-        padding: 6px;
+    .saved-search-table input {
+        font-size: 14px;
     }
        
 }
@@ -2784,8 +2863,11 @@ Responsive
     #simple-search, #advance-search {
         width: auto!important;
     }
-    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog{
+    #ViewJobForm .modal-dialog, #EditJobForm .modal-dialog, #ViewEquipmentForm .modal-dialog, #ViewSpaceForm .modal-dialog{
         width: 300px;
+    }
+    #deletepopup .modal-content {
+        height: 120px;
     }
 }
 @media screen and (max-device-width: 360px) {
