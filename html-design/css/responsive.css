@@ -1234,7 +1234,8 @@ Responsive
         margin-right: 5px;
     }
     .recruiter-job-posting .select2-container--default .select2-selection--single, .job-seeker-posting .select2-container--default .select2-selection--multiple{
-        padding: 4px 15px;
+        padding: 2px 15px;
+        height: 30px;
     }
     .saved-search-btn{
         margin-left: 0;
@@ -1242,16 +1243,16 @@ Responsive
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow{
         right: 12px;
-        top: 9px;
+        top: 7px;
     }
     .moreless-button{
         padding: 10px;
     }
     .search-results-body{
-        padding: 25px 20px;
+        padding: 20px 15px;
     }
     .search-result-list{
-        padding: 20px 20px 10px;
+        padding: 20px 15px 10px;
     }
     
 }
@@ -1741,8 +1742,8 @@ Responsive
     .saved-search-table input {
         font-size: 16px;
     }
-    .search-results-body{
-        padding: 30px 20px;
+    .moreless-button {
+        padding: 6px 10px;
     }
 }
 
@@ -2712,6 +2713,27 @@ Responsive
     .box-header{
         padding: 10px 20px;
     }
+    
+    .moreless-button{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    ul.candidate-details-items li p{
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        font-size: 14px;
+    }
+    .cand-title {
+        font-size: 20px;
+    }
+    .modify-search-btn{
+        padding: 6px 5px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-device-width: 480px) {
@@ -2808,6 +2830,18 @@ Responsive
     .saved-search-table input {
         font-size: 14px;
     }
+    .search-result-list{
+        width: 100%;
+    }
+    ul.candidate-details-items{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px!important;
+    }
+    ul.candidate-details-items li{
+        width: 100%;
+    }
+    
        
 }
 
@@ -2868,6 +2902,12 @@ Responsive
     }
     #deletepopup .modal-content {
         height: 120px;
+    }
+    .search-result-header {
+        padding: 15px 10px 0px;
+    }
+    .cand-title {
+        font-size: 18px;
     }
 }
 @media screen and (max-device-width: 360px) {
