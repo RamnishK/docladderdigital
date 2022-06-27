@@ -43,37 +43,42 @@ Header -->
           <li class="nav-item">
             <a class="nav-link" href="index.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
           </li>
-          <li class="nav-item dropdown ">
-               <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
-               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
-                   <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
-               </ul>
-             </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#"  aria-haspopup="true" aria-expanded="false">Community</a>
-          <li class="nav-item dropdown ">
-            <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >Posting<i class="fas fa-chevron-down fa-xs"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item dropdown-toggle">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Postings <i class="fas fa-chevron-down fa-xs"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-equipment-form.html">Equipment Posting</a></li>
                       <li><a class="dropdown-item" href="job-seeker-space-form.html">Space Posting</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item dropdown-toggle">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-manage-equipments.html">Manage Equipment</a></li>
                       <li><a class="dropdown-item" href="job-seeker-manage-space.html">Manage Space</a></li>
                     </ul>
                 </li>
-            </ul>
-          </li>
+                  
+              </ul>
+            </li>
           <li class="nav-item">
                <a class="nav-link" href="premium-job-seeker-payment.html"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
           </li>
           <li class="nav-item active">
-               <a class="nav-link" href="search-recruiter.html"  aria-haspopup="true" aria-expanded="false">Search Recruiter</a>
+               <a class="nav-link" href="job-seeker-search-recruiter.html"  aria-haspopup="true" aria-expanded="false">Search Recruiter</a>
           </li>
           
         </ul>
@@ -110,86 +115,71 @@ search below -->
 <section class="space-ptb bg-light">
   <div class="container">
     <div class="row">
-       <!-- <div class="col-lg-12 text-center mb-3"><h1 class="main-site-title sub-title-bg"><span>Search Recruiter</span></h1></div> -->
       <div class="col-12">
         <div class="job-search-field job-search-field-02">
           <div class="job-search-item">
             <form class="row basic-select-wrapper justify-content-center">
-                      <div class="col-lg-12">
-                        <div class="box-shadow search-wrapper-bg">
-                           <div class="row">
-                             <div class="col-md-10">
-                               <div class="row">
-                                 <div class="col-lg-3">
-                                 <div class="form-group mt-0">
-                                       <div class="form-group-search">
-                                           <!-- <label class="form-label">Hospital</label> -->
-                                           <div class="form-group main-form-input" >
-                                                 <div class="position-relative left-icon" >
-                                                     <input type="text" class="form-control" name="job_title" placeholder="Hospital" autocomplete="off" >
-                                                     <i class="fas fa-hospital-alt" ></i>
-                                                 </div>
-                                             </div>
-                                       </div>
-                                 </div>
-                                 </div>
-                                 <div class="col-lg-3">
-                                 <div class="form-group mt-0">
-                                       <div class="form-group-search">
-                                           <!-- <label class="form-label">Location</label> -->
-                                           <div class="form-group main-form-input" >
-                                                 <div class="position-relative left-icon" >
-                                                     <input type="text" class="form-control" name="job_title" placeholder="Location" autocomplete="off" >
-                                                     <i class="fas fa-map-marker-alt" style="user-select: auto;"></i>
-                                                 </div>
-                                             </div>
-                                       </div>
-                                 </div>
-                                 </div>
-                                 <div class="col-lg-3">
-                                   <div class="form-group mt-0">
-                                       <!-- <label class="form-label">Job Function</label> -->
-                                       <div class="form-group main-form-input" >
-                                             <div class="position-relative left-icon" >
-                                                 <input type="text" class="form-control" name="job_title" placeholder="Job Function" autocomplete="off" >
-                                                 <i class="fas fa-search"></i>
-                                             </div>
-                                         </div>
-                                   </div>
-                                   </div>
-                                   <div class="col-lg-3">
-                                     <div class="form-group mt-0">
-                                         <!-- <label class="form-label">Specialization</label> -->
-                                         <div class="form-group main-form-input" >
-                                               <div class="position-relative left-icon" >
-                                                   <input type="text" class="form-control" name="job_title" placeholder="Specialization" autocomplete="off" >
-                                                   <i class="fas fa-plus-circle" ></i></i>
-                                               </div>
-                                           </div>
-                                     </div>
-                                   </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-2">
-                               <div class="form-group">
-                                 <div class="mt-0 text-center">
-                                      <a href="searched-jobs.html" class="searched-btn"><input class="btn btn-secondary main-btn" type="button" value="Search"></a>
-                                 </div>
-                            </div>
-                             </div>
-                           </div>
-                           <!-- <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                     <div class="form-group">
-                                          <div class="mt-0 text-center">
-                                               <a href="searched-jobs.html" class="searched-btn"><input class="btn btn-secondary main-btn" type="button" value="Search"></a>
+              <div class="col-lg-12">
+                <div class="box-shadow search-wrapper-bg">
+                    <div class="row">
+                      <div class="col-lg-10">
+                      <div class="row">
+                          <div class="col-lg-3">
+                          <div class="form-group mt-0">
+                                <div class="form-group-search">
+                                    <div class="form-group main-form-input mb-3 mb-lg-0">
+                                          <div class="position-relative left-icon" >
+                                              <input type="text" class="form-control" name="job_title" placeholder="Hospital" autocomplete="off" >
+                                              <i class="fas fa-hospital-alt" ></i>
                                           </div>
-                                     </div>
+                                      </div>
                                 </div>
-                           </div> -->
-                         </div>
+                          </div>
+                          </div>
+                          <div class="col-lg-3">
+                          <div class="form-group mt-0">
+                                <div class="form-group-search">
+                                    <div class="form-group main-form-input mb-3 mb-lg-0">
+                                          <div class="position-relative left-icon" >
+                                              <input type="text" class="form-control" name="job_title" placeholder="Location" autocomplete="off" >
+                                              <i class="fas fa-map-marker-alt" style="user-select: auto;"></i>
+                                          </div>
+                                      </div>
+                                </div>
+                          </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group mt-0">
+                                <div class="form-group main-form-input mb-3 mb-lg-0">
+                                      <div class="position-relative left-icon" >
+                                          <input type="text" class="form-control" name="job_title" placeholder="Job Function" autocomplete="off" >
+                                          <i class="fas fa-search"></i>
+                                      </div>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3">
+                              <div class="form-group mt-0">
+                                  <div class="form-group main-form-input mb-3 mb-lg-0">
+                                        <div class="position-relative left-icon" >
+                                            <input type="text" class="form-control" name="job_title" placeholder="Specialization" autocomplete="off" >
+                                            <i class="fas fa-plus-circle" ></i></i>
+                                        </div>
+                                    </div>
+                              </div>
+                            </div>
                       </div>
-                
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="form-group">
+                          <div class="mt-0 text-center">
+                              <a href="searched-jobs.html" class="searched-btn"><input class="btn btn-secondary main-btn" type="button" value="Search"></a>
+                          </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </form>
           </div>
         </div>

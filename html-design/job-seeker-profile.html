@@ -49,31 +49,36 @@ Header -->
             <a class="nav-link" href="index.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
           </li>
           <li class="nav-item dropdown active">
-               <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
-               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
-                   <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
-               </ul>
-             </li>
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#"  aria-haspopup="true" aria-expanded="false">Community</a>
-          <li class="nav-item dropdown ">
-            <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >Posting<i class="fas fa-chevron-down fa-xs"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item dropdown-toggle">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Postings <i class="fas fa-chevron-down fa-xs"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-equipment-form.html">Equipment Posting</a></li>
                       <li><a class="dropdown-item" href="job-seeker-space-form.html">Space Posting</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item dropdown-toggle">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-manage-equipments.html">Manage Equipment</a></li>
                       <li><a class="dropdown-item" href="job-seeker-manage-space.html">Manage Space</a></li>
                     </ul>
                 </li>
-            </ul>
-          </li>
+                  
+              </ul>
+            </li>
           <li class="nav-item">
                <a class="nav-link" href="premium-job-seeker-payment.html"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
           </li>
@@ -99,355 +104,356 @@ Header -->
 Register -->
 <section class="space-ptb-outer bg-light recruiter-job-posting">
   <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-8 text-center">
-              <h2 class="main-site-title sub-title-bg mb-3 me-5"><span>Job Seeker Profile</span></h2>
-            </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-8 text-center">
+            <h2 class="main-site-title sub-title-bg mb-3"><span>Job Seeker Profile</span></h2>
+          </div>  
         </div>
-        <div class="row justify-content-center job-seeker-profile">
-            <div class="col-lg-10">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div id="leftcol_item">
-                		  <div class="user_dashboard_pic"> 
-                    		  <img alt="user photo" src="images/user-profile.png"> 
-                    		  <span class="user-photo-action">Alden Smith</span> 
-                		  </div>
-                		</div>
-                        <div class="dashboard_nav_item">
-                          <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
-                            <li class="nav-item">
-                              <a class="nav-link active" id="tab-01" data-bs-toggle="tab" href="#editProfile" role="tab" aria-controls="editProfile" aria-selected="true"><i class="login-icon fas fa-file-image"></i> Upload Photo</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="tab-02" data-bs-toggle="tab" href="#manageSubUser" role="tab" aria-controls="manageSubUser" aria-selected="false"><i class="login-icon fas fa-edit"></i>Edit Resume</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="tab-03" data-bs-toggle="tab" href="#changePassword" role="tab" aria-controls="changePassword" aria-selected="false"><i class="login-icon fas fa-upload"></i> Upload Resume</a>
-                            </li>
-                            <li class="nav-item premium-btn">
-                              <a class="" href="premium-job-seeker-payment.html" >Get Premium</a>
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="outer-col">
-                            <form class="postjob-form mx-5">
-                            <!--general info-->
-                            <div class="box">
-                                <div class="row box-header">
-                                    <h4><i class="fas flaticon-resume me-2"></i>Personal Details</h4>
-                                </div>
-                                <div class="box-body">
-                                    <div class="row bg-white login-register justify-content-center">
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>First Name</label>
-                                            <input type="text" class="form-control" value="Felica">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Last Name</label>
-                                            <input type="text" class="form-control" value="Queen">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Email Address</label>
-                                            <input type="email" class="form-control" value="felicaqueen@gmail.com">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Contact</label>
-                                            <input type="tel" class="form-control" value="+91 987654-3210">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Current Location</label>
-                                            <input type="text" class="form-control" value="Jalandhar">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Preferred Location</label>
-                                            <input type="text" class="form-control" value="Chandigarh">
-                                        </div>
-                                        <div class="form-group mb-3 col-md-6 datetimepickers">
-                                            <label class="form-label">DOB</label>
-                                            <div class="input-group date" id="datetimepicker-01" data-target-input="nearest">
-                                              <input type="text" class="form-control datetimepicker-input" value="08/11/1999" data-target="#datetimepicker-01">
-                                              <div class="input-group-append d-flex" data-target="#datetimepicker-01" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label class="form-label">Gender</label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">Male</option>
-                                              <option value="value 02" selected>Female</option>
-                                              <option value="value 03">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--education-->
-                            <div class="box">
-                                <div class="row box-header">
-                                    <h4><i class="flaticon-businessman me-1"></i>Career Profile</h4>
-                                </div>
-                                <div class="box-body">
-                                    <div class="row bg-white login-register justify-content-center">
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Job Title</label>
-                                            <input type="text" class="form-control" value="Doctor">
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label>Key Skills</label>
-                                            <select class="form-control basic-select" multiple="multiple" placeholder="Enter a Title">
-                                              <option value="value 01" selected>MD</option>
-                                              <option value="value 02">DNB</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label>Job Function<em class="text-danger">*</em></label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">Doctors</option>
-                                              <option value="value 02">Nurses</option>
-                                              <option value="value 03">Medical Officers</option>
-                                              <option value="value 03">Paramedical Staff</option>
-                                              <option value="value 03">Hospital Administrator & Medical Superintendent</option>
-                                              <option value="value 03">Marketing</option>
-                                              <option value="value 03">HR Manager</option>
-                                              <option value="value 03">Management</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label>Area of Specialization<em class="text-danger">*</em></label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">Anatomy</option>
-                                              <option value="value 02">Anesthetist</option>
-                                              <option value="value 03">Biochemistry</option>
-                                              <option value="value 03">Cardiac Anesthetist</option>
-                                              <option value="value 03">Cardiac Surgeon</option>
-                                              <option value="value 03">Cardiologist</option>
-                                              <option value="value 03">Critical Care</option>
-                                              <option value="value 03">Dentist</option>
-                                              <option value="value 03">Dermatologist </option>
-                                              <option value="value 03">Diploma in Emergency medicine</option>
-                                              <option value="value 03">Emergency Medicine</option>
-                                              <option value="value 03">Endocrine surgeon</option>
-                                              <option value="value 03">Endocrine surgery</option>
-                                              <option value="value 03">Endocrinologist</option>
-                                              <option value="value 03">ENT Surgeon</option>
-                                              <option value="value 03">Family Physician</option>
-                                              <option value="value 03">Forensic Medicine</option>
-                                              <option value="value 03">Gastro Surgeon </option>
-                                              <option value="value 03">Gastroenterologist </option>
-                                              <option value="value 03">General Surgeon </option>
-                                              <option value="value 03">Gynaecologist </option>
-                                              <option value="value 03">Hepatologist </option>
-                                              <option value="value 03">Intensivist </option>
-                                              <option value="value 03">Medical Oncologist</option>
-                                              <option value="value 03">Neonatologist</option>
-                                              <option value="value 03">Nephrologist</option>
-                                              <option value="value 03">Neuro Anesthetist</option>
-                                              <option value="value 03">Neurologist</option>
-                                              <option value="value 03">Neurosurgeon</option>
-                                              <option value="value 03">Non-Invasive Cardiologist</option>
-                                              <option value="value 03">Nuclear Medicine</option>
-                                              <option value="value 03">Opthalmologist</option>
-                                              <option value="value 03">Orthopaedic</option>
-                                              <option value="value 03">Pain Physician</option>
-                                              <option value="value 03">Pathologist </option>
-                                              <option value="value 03">Pediatric </option>
-                                              <option value="value 03">Pediatric Surgeon </option>
-                                              <option value="value 03">Physician </option>
-                                              <option value="value 03">Plastic surgeon </option>
-                                              <option value="value 03">Psychiatrist </option>
-                                              <option value="value 03">Psychologist </option>
-                                              <option value="value 03">Pulmonologist </option>
-                                              <option value="value 03">Radiation Oncologist </option>
-                                              <option value="value 03">Radiologist </option>
-                                              <option value="value 03">Respiratory Medicine </option>
-                                              <option value="value 03">Rheumatologist </option>
-                                              <option value="value 03">Sonologist </option>
-                                              <option value="value 03">Surgical Oncologist </option>
-                                              <option value="value 03">Transfusion Medicine </option>
-                                              <option value="value 03">Urologist </option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label>Min Experience<em class="text-danger">*</em></label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">0</option>
-                                              <option value="value 02">9 Months </option>
-                                              <option value="value 03" selected>1 Year</option>
-                                              <option value="value 04">2 Year </option>
-                                              <option value="value 05">5 Year</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 select-border mb-3">
-                                            <label>Max Experience<em class="text-danger">*</em></label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01" >Select Value</option>
-                                              <option value="value 02">9 Months </option>
-                                              <option value="value 03">1 Year</option>
-                                              <option value="value 04">2 Year</option>
-                                              <option value="value 05" selected>5 Year</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Current Employer</label>
-                                            <input type="text" class="form-control" value="Employee">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Current Designation</label>
-                                            <input type="text" class="form-control" value="Doctor">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3 mb-lg-2">
-                                            <label>Current CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
-                                            <div class="input-group">
-                                              <div class="input-group-prepend d-flex">
-                                                <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
-                                              </div>
-                                              <input type="text" class="form-control" value="2.5">
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3 mb-lg-2">
-                                            <label>Expected CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
-                                            <div class="input-group">
-                                              <div class="input-group-prepend d-flex">
-                                                <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
-                                              </div>
-                                              <input type="text" class="form-control" value="5">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <!--company address-->
-                            <div class="box mb-4">
-                                <div class="row box-header">
-                                    <h4><i class="flaticon-mortarboard me-2"></i>Education</h4>
-                                </div>
-                                <div class="box-body">
-                                    <div class="row bg-white login-register justify-content-center">
-                                        <div class="form-group col-md-12 mb-3">
-                                            <label>Highest Qualification<em class="text-danger">*</em></label>
-                                            <input type="text" class="form-control" value="MBBS">
-                                        </div>
-                                        <div class="form-group col-md-12 select-border mb-3">
-                                            <label>Graduation</label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">B.A.M.S</option>
-                                              <option value="value 02">M.B.B.S</option>
-                                              <option value="value 03">B.A.M.S</option>
-                                              <option value="value 03">B.H.M.S</option>
-                                              <option value="value 03">G.A.M.S</option>
-                                              <option value="value 03">B.U.M.S</option>
-                                              <option value="value 03">B.Sc</option>
-                                              <option value="value 03">G.N.M</option>
-                                              <option value="value 03">A.N.M</option>
-                                              <option value="value 03">Others</option>
-                                              <option value="value 03">B-Pharm</option>
-                                              <option value="value 03">D Pharmacy</option>
-                                              <option value="value 03">M.A.H.E.</option>
-                                              <option value="value 03">MPT</option>
-                                              <option value="value 03">BPT</option>
-                                              <option value="value 03">B.Sc in Food & Nutrition</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Institute </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Year Of Passing </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-12 select-border mb-3">
-                                            <label>Post Graduation</label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">Not Required</option>
-                                              <option value="value 02">DGO</option>
-                                              <option value="value 03">DA</option>
-                                              <option value="value 03">D-Ortho</option>
-                                              <option value="value 03">DCH</option>
-                                              <option value="value 03">DCP</option>
-                                              <option value="value 03">DMRD</option>
-                                              <option value="value 03">PGDCC</option>
-                                              <option value="value 03">Others</option>
-                                              <option value="value 03">M.Sc</option>
-                                              <option value="value 03">M-Pharm</option>
-                                              <option value="value 03">PG Diploma in Food & Nutrition</option>
-                                              <option value="value 03">M.Sc in Food & Nutrition</option>
-                                              <option value="value 03">Diploma in Sonography</option>
-                                              <option value="value 03">M.TECH</option>
-                                              <option value="value 03">MA</option>
-                                              <option value="value 03">MD</option>
-                                              <option value="value 03">MS</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Institute </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Year Of Passing </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-12 select-border mb-3">
-                                            <label>Super Specialty</label>
-                                            <select class="form-control basic-select">
-                                              <option value="value 01">Not Required</option>
-                                              <option value="value 02">Mch</option>
-                                              <option value="value 03">DM</option>
-                                              <option value="value 03">DNB</option>
-                                              <option value="value 03">Fellowship</option>
-                                              <option value="value 03">PDCC</option>
-                                              <option value="value 03">Others</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Institute </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-6 mb-3">
-                                            <label>Year Of Passing </label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                        <div class="form-group col-md-12 mt-3 mb-3">
-                                            <div class="custom-file">
-                                                <p class="m-auto align-self-center">
-                                                    <i class="fa fa-upload me-2"></i>Upload Resume File size is 3 MB
-    											</p>
-    											<input type="file" class="site-button form-control" id="customFile">
-    											<!--<input type="file"  class="form-control" id="file" name="myfiles[]" multiple="">-->
-    										</div>
-                                            
-                                        </div>
-                                        <div class="form-group col-md-12 mb-3">
-                                            <label>Add Photo</label>
-                                            <div class="input-group choose-file">
-                                              <input type="file" class="form-control" id="file-upload" multiple required />
-                                              <label for="file-upload" class="input-group-text" id="file-upload-filename">Choose file </label>
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                        <div class="form-group col-md-12 mt-3 mb-4">
-                                                <input class="btn btn-primary main-btn" type="button" value="Submit">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                        
-                    </div>
-                    
+      </div>
+    </div>
+    <div class="row justify-content-center job-seeker-profile">
+        <div class="col-lg-10">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div id="leftcol_item" class="mb-3">
+                  <div class="user_dashboard_pic"> 
+                      <img alt="user photo" src="images/user-profile.png"> 
+                      <span class="user-photo-action">Alden Smith</span> 
+                  </div>
                 </div>
-                    
-                
+                    <div class="dashboard_nav_item">
+                      <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="tab-01" data-bs-toggle="tab" href="#editProfile" role="tab" aria-controls="editProfile" aria-selected="true"><i class="login-icon fas fa-file-image"></i> Upload Photo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="tab-02" data-bs-toggle="tab" href="#manageSubUser" role="tab" aria-controls="manageSubUser" aria-selected="false"><i class="login-icon fas fa-edit"></i>Edit Resume</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="tab-03" data-bs-toggle="tab" href="#changePassword" role="tab" aria-controls="changePassword" aria-selected="false"><i class="login-icon fas fa-upload"></i> Upload Resume</a>
+                        </li>
+                        <li class="nav-item premium-btn">
+                          <a class="" href="premium-job-seeker-payment.html" >Get Premium</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <form class="postjob-form">
+                      <div class="box-header">
+                        <h4><i class="fas flaticon-resume me-2"></i>Personal Details</h4>
+                      </div>
+                        <div class="box">
+                            <div class="box-body">
+                                <div class="bg-white login-register justify-content-center">
+                                  <div class="row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" value="Felica">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control" value="Queen">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Email Address</label>
+                                        <input type="email" class="form-control" value="felicaqueen@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Contact</label>
+                                        <input type="tel" class="form-control" value="+91 987654-3210">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Current Location</label>
+                                        <input type="text" class="form-control" value="Jalandhar">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Preferred Location</label>
+                                        <input type="text" class="form-control" value="Chandigarh">
+                                    </div>
+                                    <div class="form-group mb-3 col-md-6 datetimepickers">
+                                        <label class="form-label">DOB</label>
+                                        <div class="input-group date" id="datetimepicker-01" data-target-input="nearest">
+                                          <input type="text" class="form-control datetimepicker-input" value="08/11/1999" data-target="#datetimepicker-01">
+                                          <div class="input-group-append d-flex" data-target="#datetimepicker-01" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-3">
+                                        <label class="form-label">Gender</label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">Male</option>
+                                          <option value="value 02" selected>Female</option>
+                                          <option value="value 03">Other</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--education-->
+                        <div class="box-header">
+                          <h4><i class="flaticon-businessman me-1"></i>Career Profile</h4>
+                        </div>
+                        <div class="box">
+                            <div class="box-body">
+                                <div class="bg-white login-register justify-content-center">
+                                  <div class="row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Job Title</label>
+                                        <input type="text" class="form-control" value="Doctor">
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-2">
+                                        <label>Key Skills</label>
+                                        <select class="form-control basic-select" multiple="multiple" placeholder="Enter a Title">
+                                          <option value="value 01" selected>MD</option>
+                                          <option value="value 02">DNB</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-3">
+                                        <label>Job Function<em class="text-danger">*</em></label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">Doctors</option>
+                                          <option value="value 02">Nurses</option>
+                                          <option value="value 03">Medical Officers</option>
+                                          <option value="value 03">Paramedical Staff</option>
+                                          <option value="value 03">Hospital Administrator & Medical Superintendent</option>
+                                          <option value="value 03">Marketing</option>
+                                          <option value="value 03">HR Manager</option>
+                                          <option value="value 03">Management</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-3">
+                                        <label>Area of Specialization<em class="text-danger">*</em></label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">Anatomy</option>
+                                          <option value="value 02">Anesthetist</option>
+                                          <option value="value 03">Biochemistry</option>
+                                          <option value="value 03">Cardiac Anesthetist</option>
+                                          <option value="value 03">Cardiac Surgeon</option>
+                                          <option value="value 03">Cardiologist</option>
+                                          <option value="value 03">Critical Care</option>
+                                          <option value="value 03">Dentist</option>
+                                          <option value="value 03">Dermatologist </option>
+                                          <option value="value 03">Diploma in Emergency medicine</option>
+                                          <option value="value 03">Emergency Medicine</option>
+                                          <option value="value 03">Endocrine surgeon</option>
+                                          <option value="value 03">Endocrine surgery</option>
+                                          <option value="value 03">Endocrinologist</option>
+                                          <option value="value 03">ENT Surgeon</option>
+                                          <option value="value 03">Family Physician</option>
+                                          <option value="value 03">Forensic Medicine</option>
+                                          <option value="value 03">Gastro Surgeon </option>
+                                          <option value="value 03">Gastroenterologist </option>
+                                          <option value="value 03">General Surgeon </option>
+                                          <option value="value 03">Gynaecologist </option>
+                                          <option value="value 03">Hepatologist </option>
+                                          <option value="value 03">Intensivist </option>
+                                          <option value="value 03">Medical Oncologist</option>
+                                          <option value="value 03">Neonatologist</option>
+                                          <option value="value 03">Nephrologist</option>
+                                          <option value="value 03">Neuro Anesthetist</option>
+                                          <option value="value 03">Neurologist</option>
+                                          <option value="value 03">Neurosurgeon</option>
+                                          <option value="value 03">Non-Invasive Cardiologist</option>
+                                          <option value="value 03">Nuclear Medicine</option>
+                                          <option value="value 03">Opthalmologist</option>
+                                          <option value="value 03">Orthopaedic</option>
+                                          <option value="value 03">Pain Physician</option>
+                                          <option value="value 03">Pathologist </option>
+                                          <option value="value 03">Pediatric </option>
+                                          <option value="value 03">Pediatric Surgeon </option>
+                                          <option value="value 03">Physician </option>
+                                          <option value="value 03">Plastic surgeon </option>
+                                          <option value="value 03">Psychiatrist </option>
+                                          <option value="value 03">Psychologist </option>
+                                          <option value="value 03">Pulmonologist </option>
+                                          <option value="value 03">Radiation Oncologist </option>
+                                          <option value="value 03">Radiologist </option>
+                                          <option value="value 03">Respiratory Medicine </option>
+                                          <option value="value 03">Rheumatologist </option>
+                                          <option value="value 03">Sonologist </option>
+                                          <option value="value 03">Surgical Oncologist </option>
+                                          <option value="value 03">Transfusion Medicine </option>
+                                          <option value="value 03">Urologist </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-3">
+                                        <label>Min Experience<em class="text-danger">*</em></label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">0</option>
+                                          <option value="value 02">9 Months </option>
+                                          <option value="value 03" selected>1 Year</option>
+                                          <option value="value 04">2 Year </option>
+                                          <option value="value 05">5 Year</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 select-border mb-3">
+                                        <label>Max Experience<em class="text-danger">*</em></label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01" >Select Value</option>
+                                          <option value="value 02">9 Months </option>
+                                          <option value="value 03">1 Year</option>
+                                          <option value="value 04">2 Year</option>
+                                          <option value="value 05" selected>5 Year</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Current Employer</label>
+                                        <input type="text" class="form-control" value="Employee">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Current Designation</label>
+                                        <input type="text" class="form-control" value="Doctor">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3 mb-lg-2">
+                                        <label>Current CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
+                                        <div class="input-group">
+                                          <div class="input-group-prepend d-flex">
+                                            <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
+                                          </div>
+                                          <input type="text" class="form-control" value="2.5">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3 mb-lg-2">
+                                        <label>Expected CTC<em class="text-danger">*</em> <small>( in Lacs )</small></label>
+                                        <div class="input-group">
+                                          <div class="input-group-prepend d-flex">
+                                            <div class="input-group-text form-control"><i class="fas fa-rupee-sign"></i></div>
+                                          </div>
+                                          <input type="text" class="form-control" value="5">
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!--company address-->
+                        <div class="box-header">
+                          <h4><i class="flaticon-mortarboard me-2"></i>Education</h4>
+                        </div>
+                        <div class="box mb-4">
+                            <div class="box-body">
+                                <div class="bg-white login-register justify-content-center">
+                                  <div class="row">
+                                    <div class="form-group col-md-12 mb-3">
+                                        <label>Highest Qualification<em class="text-danger">*</em></label>
+                                        <input type="text" class="form-control" value="MBBS">
+                                    </div>
+                                    <div class="form-group col-md-12 select-border mb-3">
+                                        <label>Graduation</label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">B.A.M.S</option>
+                                          <option value="value 02">M.B.B.S</option>
+                                          <option value="value 03">B.A.M.S</option>
+                                          <option value="value 03">B.H.M.S</option>
+                                          <option value="value 03">G.A.M.S</option>
+                                          <option value="value 03">B.U.M.S</option>
+                                          <option value="value 03">B.Sc</option>
+                                          <option value="value 03">G.N.M</option>
+                                          <option value="value 03">A.N.M</option>
+                                          <option value="value 03">Others</option>
+                                          <option value="value 03">B-Pharm</option>
+                                          <option value="value 03">D Pharmacy</option>
+                                          <option value="value 03">M.A.H.E.</option>
+                                          <option value="value 03">MPT</option>
+                                          <option value="value 03">BPT</option>
+                                          <option value="value 03">B.Sc in Food & Nutrition</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Institute </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Year Of Passing </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-12 select-border mb-3">
+                                        <label>Post Graduation</label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">Not Required</option>
+                                          <option value="value 02">DGO</option>
+                                          <option value="value 03">DA</option>
+                                          <option value="value 03">D-Ortho</option>
+                                          <option value="value 03">DCH</option>
+                                          <option value="value 03">DCP</option>
+                                          <option value="value 03">DMRD</option>
+                                          <option value="value 03">PGDCC</option>
+                                          <option value="value 03">Others</option>
+                                          <option value="value 03">M.Sc</option>
+                                          <option value="value 03">M-Pharm</option>
+                                          <option value="value 03">PG Diploma in Food & Nutrition</option>
+                                          <option value="value 03">M.Sc in Food & Nutrition</option>
+                                          <option value="value 03">Diploma in Sonography</option>
+                                          <option value="value 03">M.TECH</option>
+                                          <option value="value 03">MA</option>
+                                          <option value="value 03">MD</option>
+                                          <option value="value 03">MS</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Institute </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Year Of Passing </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-12 select-border mb-3">
+                                        <label>Super Specialty</label>
+                                        <select class="form-control basic-select">
+                                          <option value="value 01">Not Required</option>
+                                          <option value="value 02">Mch</option>
+                                          <option value="value 03">DM</option>
+                                          <option value="value 03">DNB</option>
+                                          <option value="value 03">Fellowship</option>
+                                          <option value="value 03">PDCC</option>
+                                          <option value="value 03">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Institute </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label>Year Of Passing </label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group col-md-12 mt-3 mb-3">
+                                        <div class="custom-file">
+                                            <p class="m-auto align-self-center">
+                                                <i class="fa fa-upload me-2"></i>Upload Resume File size is 3 MB
+                      </p>
+                      <input type="file" class="site-button form-control" id="customFile">
+                      <!--<input type="file"  class="form-control" id="file" name="myfiles[]" multiple="">-->
+                    </div>
+                                        
+                                    </div>
+                                    <div class="form-group col-md-12 mb-3">
+                                        <label>Add Photo</label>
+                                        <div class="input-group choose-file">
+                                          <input type="file" class="form-control" id="file-upload" multiple required />
+                                          <label for="file-upload" class="input-group-text" id="file-upload-filename">Choose file </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 mt-2 mb-2 mb-lg-3 text-center">
+                                        <input class="btn btn-primary main-btn" type="button" value="Submit">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
   </div>
 </section>
 <!--=================================

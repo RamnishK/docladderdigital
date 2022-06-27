@@ -52,37 +52,43 @@ Header -->
             <a class="nav-link" href="index.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
           </li>
           <li class="nav-item dropdown">
-               <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
-               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
-                   <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
-               </ul>
-             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"  aria-haspopup="true" aria-expanded="false">Community</a>
-          <li class="nav-item dropdown ">
-            <a class="nav-link" id="navbarDropdown" role="button" data-toggle aria-haspopup="true" aria-expanded="false" >Posting<i class="fas fa-chevron-down fa-xs"></i></a>
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile<i class="fas fa-chevron-down fa-xs"></i></a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item dropdown-toggle">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+              <li><a class="dropdown-item" href="job-seeker-profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="job-seeker-change-password.html">Change Password</a></li>
+            </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  aria-haspopup="true" aria-expanded="false">Community</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Postings <i class="fas fa-chevron-down fa-xs"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Create Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-equipment-form.html">Equipment Posting</a></li>
                       <li><a class="dropdown-item" href="job-seeker-space-form.html">Space Posting</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-item dropdown-toggle">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="javascript:void(0)">Manage Postings <i class="fas fa-chevron-right fa-xs"></i></a>
                     <ul class="dropdown-menu left-side">
                       <li><a class="dropdown-item" href="job-seeker-manage-equipments.html">Manage Equipment</a></li>
                       <li><a class="dropdown-item" href="job-seeker-manage-space.html">Manage Space</a></li>
                     </ul>
                 </li>
-            </ul>
-          </li>
-          <li class="nav-item active">
-               <a class="nav-link" href="premium-job-seeker-payment.html"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="job-seeker-search-recruiter.html"  aria-haspopup="true" aria-expanded="false">Search Recruiter</a>
-          </li>
+                  
+              </ul>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="premium-job-seeker-payment.html"  aria-haspopup="true" aria-expanded="false">Premium Job Seeker</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="job-seeker-search-recruiter.html"  aria-haspopup="true" aria-expanded="false">Search Recruiter</a>
+            </li>
           
         </ul>
       </div>
@@ -102,16 +108,11 @@ Header -->
 Register -->
 <section class="space-ptb-outer bg-light recruiter-job-posting">
   <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6"><h2 class="main-site-title text-center sub-title-bg mb-3 me-5"><span>Benefits</span></h2></div>
-            <div class="col-lg-6 text-center">
-              <h2 class="main-site-title sub-title-bg mb-3 me-5"><span>Payment Details</span></h2>
-            </div>
-        </div>
         <div class="row justify-content-center job-seeker-profile">
             <div class="col-lg-12">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
+                      <div><h2 class="main-site-title text-center sub-title-bg mb-3"><span>Benefits</span></h2></div>
                       <div class="box-2 box-shadow">
                          <div id="jobDescriptionText" class="jobDescriptionText pb-3">
                               <ul class="bullets">
@@ -125,7 +126,8 @@ Register -->
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                      <div><h2 class="main-site-title text-center sub-title-bg mb-3"><span>Payment Details</span></h2></div>
                       <div class="box-2 box-shadow">
                           <div class="box-inner-2">
                             <p class="mb-3">Complete your purchase by providing your payment details</p>

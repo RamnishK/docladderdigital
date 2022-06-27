@@ -14,7 +14,7 @@ Responsive
         font-size: 14px;
         border-radius: 5px;
         border: none;
-        left: 120%;
+        left: 130%;
         -webkit-transform: translate3d(-50%, 10px, 0);
         transform: translate3d(-50%, 10px, 0);
         -webkit-transition: all 0.3s ease-in-out;
@@ -152,9 +152,9 @@ Responsive
         margin-top: -40px;
     }
     /* job-search-item */
-    .job-search-item .btn {
+    /* .job-search-item .btn {
         padding: 18px 25px;
-    }
+    } */
     /* secondary-menu */
     .secondary-menu ul {
         -ms-flex-wrap: wrap;
@@ -378,8 +378,11 @@ Responsive
 }
 
 @media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
-    .job-search-item input {
-        padding-left: 40px;
+    #category-listing .employers-list{
+        width: 100%;
+    }
+    .btn.btn-sm{
+        padding: 6px 12px;
     }
     #mobile-app .app-btns span {
          font-size: 18px!important;
@@ -426,9 +429,37 @@ Responsive
     .moreless-button{
         padding: 10px;
     }
+    .resume-section{
+        margin: 15px 0;
+    }
+    .search-wrapper-bg .job-search-item .left-icon i{
+        left: 10px;
+        font-size: 18px;
+    }
+    .search-wrapper-bg{
+        padding: 30px 25px;
+    }
+    .search-wrapper-bg .job-search-item .btn{
+        padding: 0px 20px;
+    }
+    .newsletter-heading h3, .newsletter-email button, .newsletter-email input::placeholder{
+        font-size: 20px;
+    }
+    .thumbnail img:nth-child(4) {
+        margin-right: 6px;
+    }
+    
+    .thumbnail img:nth-child(6) {
+        margin-right: 6px;
+    }
+    #top-recruiters .job-list.job-grid .job-list-logo .img-fluid{
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-device-width: 992px) and (max-device-width: 1024px) {
+
     .login span {
         padding: 0 5px;
     }
@@ -494,6 +525,22 @@ Responsive
     }
     #ViewJobForm .modal-dialog {
         height: 350px;
+    }
+    .advertise-block h2{
+        font-size: 32px;
+    }
+    .email-btn a{
+        font-size: 30px;
+    }
+    .inner-slider-heading-main h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .inner-slider-heading-main p{
+        font-size: 20px;
+    }
+    .inner-slider-heading-main p{
+        font-size: 20px;
     }
 }
 
@@ -593,7 +640,7 @@ Responsive
         margin-bottom: 20px;
     }
     .healthcare-content {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
     }
     .btn-contact a {
         font-size: 18px;
@@ -752,12 +799,12 @@ Responsive
         text-align: center;
     }
     .equipment-title-heading h1 {
-        font-size: 55px;
-        line-height: 50px;
+        font-size: 50px;
+        line-height: 40px;
     }
     .equipment-title-heading h2 {
-        font-size: 55px;
-        line-height: 50px;
+        font-size: 50px;
+        line-height: 40px;
     }
     .equipment-title-heading p {
         font-size: 24px;
@@ -766,9 +813,9 @@ Responsive
     .equipment-heading .section-title p {
         font-size: 18px;
     }
-    #equipment-features .feature-info {
+    /* #equipment-features .feature-info {
         height: auto;
-    }
+    } */
     .header .container-fluid {
         padding: 0 20px;
     }
@@ -792,7 +839,7 @@ Responsive
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     }
     .navbar .navbar-nav {
-        padding: 10px 0 0;
+        padding: 10px 0 10px;
     }
     .navbar .navbar-nav .nav-link {
         color: #000;
@@ -1052,7 +1099,10 @@ Responsive
     }
     /* Popup */
     .social-login ul li a {
-        padding: 15px;
+        padding: 10px 15px;
+    }
+    .social-login ul li{
+        margin-bottom: 1%;
     }
     .job-filter-tag {
         -ms-flex-pack: start;
@@ -1166,7 +1216,7 @@ Responsive
         font-size: 18px;
     }
     .user-dashboard-info-box{
-        padding: 12px;
+        padding: 10px;
     }
     .manage-table .table tr th i {
         font-size: 14px;
@@ -1178,7 +1228,7 @@ Responsive
         font-size: 14px;
         padding: 0.3rem;
     }
-    .user-dashboard-table .table {
+    .manage-table .user-dashboard-table .table {
         width: 800px;
     }
     /* .sub-title-bg span{
@@ -1233,13 +1283,14 @@ Responsive
     .search-result-header .form-group label{
         margin-right: 5px;
     }
-    .recruiter-job-posting .select2-container--default .select2-selection--single, .job-seeker-posting .select2-container--default .select2-selection--multiple{
+    .recruiter-job-posting .search-result-header .select2-container--default .select2-selection--single, .job-seeker-posting .select2-container--default .select2-selection--multiple{
         padding: 2px 15px;
         height: 30px;
     }
     .saved-search-btn{
         margin-left: 0;
         padding: 1px 8px;
+        line-height: 25px;
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow{
         right: 12px;
@@ -1254,8 +1305,130 @@ Responsive
     .search-result-list{
         padding: 20px 15px 10px;
     }
-    
+    .candidate-details-title h2 span{
+        font-size: 20px;
+    }
+    .candidate-details-title h3 span{
+        font-size: 16px;
+    }
+    .candidate-details-right{
+        padding: 20px 20px;
+    }
+    ul.details{
+        margin-top: 10px;
+    }
+    .candidate-details-right i{
+        font-size: 20px;
+    }
+    .candidate-details-right h4{
+        font-size: 18px;
+    }
+    .content-widget-right{
+        padding: 15px 12px;
+    }
+    .content-widget-right .download-btn{
+        padding: 10px 15px;
+    }
+    .resume-section{
+        margin: 15px 0;
+    }
+    .sub-title-bg span{
+        padding: 6px 30px;
+    }
+    .details span, .details label{
+        font-size: 16px;
+    }
+    .user_dashboard_pic{
+        width: 200px;
+        height: auto;
+        margin: auto;
+    }
+    .resume-section-col {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dashboard_nav_item ul,.dashboard_nav_item{
+        margin-bottom: 0;
+    }
+    .recruiter-job-posting .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        margin-bottom: 0;
+    }
+    .jobDescriptionText ul li{
+        font-size: 18px;
+    }
+    .box-2{
+        padding: 20px;
+    }
+    .search-wrapper-bg{
+        padding: 25px 20px;
+    }
+    #job-seeker.header .navbar .dropdown-menu, #recruiter-header.header .navbar .dropdown-menu {
+        overflow: hidden;
+    }
+    #contact-form label{
+        font-size: 18px;
+    }
+    .advertise-block h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .email-btn a{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 6px 30px;
+    }
+    .healthcare-content ul li a{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .healthcare-content p{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .btn-contact, .contact-details-ul{
+        font-size: 18px;
+        width: 100%;
+    }
+    .inner-slider-heading-main p, .products-heading h6{
+        font-size: 18px;
+    }
+    .inner-slider-heading-main h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .products-heading h5{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #equipment-brands .employers-grid {
+        padding: 10px 20px 0px;
+    }
+    .thumbnail img:nth-child(4) {
+        margin-right: 6px;
+    }
+    #product-details .card{
+        padding: 0;
+    }
+    section#about-features {
+        padding: 0;
+    }
+    .job-list{
+        width: 100%;
+    }
+    .main-form-input{
+        margin-bottom: 10px;
+    }
+    #premium-jobs-option .job-search-item, #category-listing .employers-list {
+        width: 100%;
+    }
+    #category-listing .employers-list {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
+
 
 @media screen and (max-device-width: 767px) {
     .homepage-slider {
@@ -1357,9 +1530,6 @@ Responsive
     .newsletter-email button {
         font-size: 20px;
     }
-    .newsletter-email {
-        justify-content: center;
-    }
     .newsletter-heading{
         text-align: center;
     }
@@ -1385,17 +1555,17 @@ Responsive
     .fixed-banner-height {
         height: 250px;
     }
-    .employers-list-logo img {
+    /* .employers-list-logo img {
         height: auto!important;
-    }
+    } */
     .recruiter h5 {
         font-size: 35px;
         margin-left: -25%;
     }
     #equipments .btn {
-        padding: 10px 20px;
-        font-size: 14px;
-        font-weight: 500;
+        /* padding: 10px 20px; */
+        /* font-size: 14px;
+        font-weight: 500; */
     }
     #equipments .job-filter h6 {
         font-size: 15px!important;
@@ -1541,9 +1711,9 @@ Responsive
     .category-item:nth-child(2n+0) {
         border-right: 0;
     }
-    .social-login ul li {
+    /* .social-login ul li {
         min-width: 100%;
-    }
+    } */
     /* .login-register .form-control {
         height: 36px;
     } */
@@ -1554,27 +1724,7 @@ Responsive
         margin: 0px;
     }
     /* employers-list */
-    .employers-list {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-    .employers-list .employers-list-logo {
-        margin: 0 0 25px 0;
-        display: inline-block;
-    }
-    .employers-list .employers-list-details {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    .employers-list .employers-list-title {
-        margin-bottom: 10px;
-    }
-    .employers-list ul {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+    
     .Testimonial-content p {
         font-size: 16px;
     }
@@ -1677,7 +1827,7 @@ Responsive
         font-size: 16px;
     }
     .inner-slider-heading-main p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .pagination .page-item .page-link{
         font-size: 16px;
@@ -1744,6 +1894,63 @@ Responsive
     }
     .moreless-button {
         padding: 6px 10px;
+    }
+    
+    .main-site-title {
+        font-size: 20px;
+    }
+    .sub-title-bg span {
+        padding: 6px 30px;
+    }
+    .manage-table .sub-title-bg span {
+        padding: 6px 15px;
+    }
+    .recruiter-job-posting .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        margin-bottom: 5px;
+    }
+    .jobDescriptionText ul li, .box-inner-2 p, .box-inner-2 label, .box-2 .box-inner-2 .btn.btn-primary{
+        font-size: 16px;
+    }
+    #contact-form label, .article .contact-details-ul li a{
+        font-size: 16px;
+    }
+    .query-heading h2{
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .newsletter-img{
+        text-align: center;
+    }
+    .btn-contact{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .contact-section .sub-title-bg span{
+        padding: 6px 20px;
+    }
+    .products-heading h6{
+        font-size: 16px;
+    }
+    .sidebar {
+        margin-bottom: 25px;
+    }
+    .feature-info .feature-info-icon{
+        margin-bottom: 10px;
+    }
+    #equipment-brands .employers-grid {
+        padding: 15px 20px 0px;
+    }
+    .about-spacing {
+        padding: 30px 0;
+    }
+    .about-spacing {
+        padding: 30px 0;
+    }
+    .newsletter-email {
+        justify-content: center;
+    }
+    .newsletter-heading{
+        padding: 1rem 0 0;
     }
 }
 
@@ -1901,7 +2108,7 @@ Responsive
     } */
     #aboutus-tabs .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
-        font-size: 16px;
+        font-size: 14px;
     }
     #aboutus-tabs .nav-pills .nav-link {
         font-size: 16px;
@@ -1923,7 +2130,7 @@ Responsive
         line-height: 30px;
     }
     .newsletter-heading h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .newsletter-heading h2 {
         font-size: 20px;
@@ -1931,9 +2138,6 @@ Responsive
     .contact-heading h2 {
         font-size: 20px;
         line-height: 30px;
-    }
-    .healthcare-content {
-        padding: 0 1rem;
     }
     .healthcare-content p {
         font-size: 16px;
@@ -1948,8 +2152,8 @@ Responsive
         line-height: 30px;
     }
     .email-btn a {
-        padding: 8px 40px;
-        font-size: 20px;
+        padding: 3px 20px;
+        font-size: 18px;
         line-height: 30px;
     }
     .query-heading h2 {
@@ -1957,7 +2161,7 @@ Responsive
         line-height: 30px;
     }
     #contact-form label {
-        font-size: 18px;
+        font-size: 16px;
     }
     .address-details li h2 {
         font-size: 20px;
@@ -1970,11 +2174,11 @@ Responsive
         line-height: 30px;
     }
     .newsletter-email input::placeholder {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
     }
     .slider-heading {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
     }
     .slider-btn a {
@@ -2080,9 +2284,9 @@ Responsive
     .container-fluid {
         padding: 0 15px;
     }
-    .job-search-item .btn {
+    /* .job-search-item .btn {
         padding: 14px 15px;
-    }
+    } */
     .job-search-item input {
         height: 34px;
     }
@@ -2618,7 +2822,7 @@ Responsive
     }
     /* About */
     .inner-slider-heading-main h1{
-        font-size: 20px;
+        font-size: 22px;
         margin: 0;
     }
     /* Recruiter Section */
@@ -2658,7 +2862,7 @@ Responsive
         font-size: 16px;
     } */
     .select-all-bg .form-check-input {
-        margin-top: 2px;
+        margin-top: 4px;
     }
     /* .sub-title-bg span {
         padding: 6px 10px;
@@ -2667,7 +2871,7 @@ Responsive
         padding: 3px 6px;
     }
     .manage-table .form-check {
-        padding-left: 1.8em;
+        padding-left: 2em;
     }
     .space-ptb-outer {
         padding: 30px 0 30px;
@@ -2734,6 +2938,123 @@ Responsive
         padding: 6px 5px;
         font-size: 14px;
     }
+    .content-widget-right .download-btn, .candidate-details-title h3 span, .resume-section span, .resume-section p{
+        font-size: 14px;
+    }
+    .candidate-details-title h2 span, .content-widget-right h3{
+        font-size: 18px;
+    }
+    .candidate-details-right {
+        padding: 15px 15px;
+    }
+    /* .manage-table .main-site-title {
+        font-size: 16px;
+    }
+    .manage-table .sub-title-bg span {
+        padding: 6px 10px;
+    } */
+    .manage-table .form-check-input{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .table-desktop{
+        display: none;
+    }
+    .table-tab{
+        display: block;
+    }
+    .dashboard_nav_item .nav-tabs .nav-item .nav-link.active{
+        width: 100%;
+    }
+    .dashboard_nav_item .nav-tabs .nav-item .nav-link{
+        height: auto;
+        width: 100%;
+    }
+    .premium-btn a{
+        height: 40px;
+        padding: 6px 15px;
+    }
+    .jobDescriptionText ul li, .box-inner-2 p, .box-inner-2 label, .box-2 .box-inner-2 .btn.btn-primary, .form-control::placeholder{
+        font-size: 14px;
+    }
+    #login-register .forgot-pass a {
+        font-size: 14px;
+    }
+    .social-login ul li.twitter a, .social-login ul li.facebook a, .social-login ul li.google a{
+        padding: 8px 5px;
+    }
+    .social-login ul li a img, .social-login ul li.google a img {
+        width: 70%;
+    }
+    .newsletter-email button {
+        font-size: 16px;
+    }
+    .contact-section .main-site-title{
+        font-size: 18px;
+    }
+    .title-tab{
+        display: none;
+    }
+    .title-mobile{
+        display: block;
+    }
+    #contact-form .main-btn{
+        margin-top: 10px;
+    }
+    .equipment-counter .counter-text span{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .equipment-banner {
+        height: 480px;
+        padding: 30px 0 30px 0;
+    }
+    #equipment-brands .employers-grid {
+        padding: 20px 20px 0px;
+    }
+    #equipment-videos .section-title h2{
+        font-size: 24px;
+        margin-top: 0;
+    }
+    .equipment-counter ul{
+        margin-bottom: 5px;
+    }
+    #equipment-features{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product-name h5 span{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .product-description .nav-tabs .nav-item .nav-link{
+        width: 150px;
+    }
+    .employers-list {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .employers-list .employers-list-logo {
+        margin: 0 0 5px 0;
+        display: inline-block;
+    }
+    .employers-list .employers-list-details {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .employers-list .employers-list-title {
+        margin-bottom: 10px;
+    }
+    .employers-list ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #category-listing .employers-list-position .btn {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-device-width: 480px) {
@@ -2807,21 +3128,8 @@ Responsive
     .recruiter-btn li input {
         font-size: 14px;
     }
-    .del-all {
-        font-size: 12px;
-        padding: 0 3px;
-    }
-    .select-all-bg label {
-        font-size: 12px;
-    }
-    .manage-table .form-check {
-        padding-left: 1.4em;
-    }
-    .select-all-bg .form-check-input {
-        margin-top: 4px;
-        margin-left: -16px;
-        width: 0.8rem;
-        height: 0.8rem;
+    #contact-form label {
+        font-size: 14px;
     }
     .select2-container--default .select2-selection--single .select2-selection__rendered, .form-control::placeholder {
         font-size: 14px;
@@ -2841,8 +3149,41 @@ Responsive
     ul.candidate-details-items li{
         width: 100%;
     }
-    
-       
+    ul.details li{
+        width: 100%;
+    }
+    .candidate-details-right h4, .product-name h5 span {
+        font-size: 16px;
+    }
+    .candidate-details-right i {
+        font-size: 18px;
+    }
+    .email-btn a{
+        padding: 4px 40px;
+        font-size: 16px;
+    }
+    .advertise-block h2{
+        font-size: 20px;
+    }
+    .banner-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipment-buy-btn a, .equipment-sell-btn a{
+        font-size: 14px;
+        line-height: 45px;
+    }
+    .equipment-title-heading h1, .equipment-title-heading h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .equipment-title-heading p, .equipment-counter .counter-text span, .equipment-counter .counter-text label{
+        font-size: 16px;
+    }
+    .equipment-counter .img-fluid{
+        max-width: 80%;
+    }
+
 }
 
 @media screen and (min-device-width: 1400px) {
@@ -2909,6 +3250,18 @@ Responsive
     .cand-title {
         font-size: 18px;
     }
+    span.divider{
+        display: none;
+    }
+    .social-login ul li a img, .social-login ul li.google a img{
+        width: 60%;
+    }
+    .social-login ul li.twitter a, .social-login ul li.facebook a, .social-login ul li.google a{
+        padding: 6px 3px;
+    }
+    .social-login ul li a {
+        padding: 7px 10px;
+    }
 }
 @media screen and (max-device-width: 360px) {
    #mobile-app .feature-info-icon {
@@ -2929,4 +3282,7 @@ Responsive
    .desc-price ul li {
        font-size: 12px;
    }
+   .resume-section-col{
+        flex-direction: column;
+    }
 }
