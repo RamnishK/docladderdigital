@@ -224,7 +224,9 @@ Responsive
     .pagination .page-item .page-link{
         padding: 5px 15px;
     }
-    /* Recruiter Section */
+    .news-header h4 a{
+        font-size: 20px;
+    }
   
 }
 
@@ -540,6 +542,12 @@ Responsive
         font-size: 20px;
     }
     .inner-slider-heading-main p{
+        font-size: 20px;
+    }
+    .main-h5{
+        font-size: 20px;
+    }
+    .widget .btn {
         font-size: 20px;
     }
 }
@@ -1426,6 +1434,13 @@ Responsive
     #category-listing .employers-list {
         width: 100%;
         margin-bottom: 15px;
+    }
+    .sidebar{
+        border-right: none;
+        padding: 0;
+    }
+    .main-h5, .widget .btn{
+        font-size: 20px;
     }
 }
 
@@ -3053,6 +3068,13 @@ Responsive
     }
     #category-listing .employers-list-position .btn {
         font-size: 14px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    #news-description .blog-post .blog-post-footer {
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
 }

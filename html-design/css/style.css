@@ -9980,6 +9980,9 @@ img.logo-grid {
     margin-bottom: 30px;
     border-bottom-right-radius: 5px;
 }
+.news-header:last-child{
+    margin-bottom: 0;
+}
 
 .news-header h4 a {
     font-size: 24px;
@@ -10373,7 +10376,7 @@ img.logo-grid {
 
 #news-description .blog-post {
     border: 2px solid #13648c;
-    padding: 30px 10px;
+    padding: 30px 10px 20px;
     border-radius: 5px;
 }
 
