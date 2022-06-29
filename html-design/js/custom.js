@@ -453,3 +453,4 @@ NOTE: This file contains all scripts for the actual Template.
 	});
 })(jQuery);
 
+
