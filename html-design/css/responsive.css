@@ -227,6 +227,9 @@ Responsive
     .news-header h4 a{
         font-size: 20px;
     }
+    .community-sec .container-fluid {
+        padding: 0 30px;
+    }
   
 }
 
@@ -458,10 +461,18 @@ Responsive
         width: 80%;
         margin: auto;
     }
+    .community-videos-list .sessions-image-block a{
+        /* height: auto; */
+        width: auto;
+    }
 }
-
+@media screen and (min-device-width: 1025px) and (max-device-width: 1199px) {
+    .top-card ul li{
+        width: 35%;
+    }
+}   
 @media screen and (min-device-width: 992px) and (max-device-width: 1024px) {
-
+    
     .login span {
         padding: 0 5px;
     }
@@ -549,6 +560,25 @@ Responsive
     }
     .widget .btn {
         font-size: 20px;
+    }
+    .top-card ul li{
+        width: 30%;
+    }
+    .top-card ul li span{
+        margin-right: 6px;
+        padding: 4px 6px;
+    }
+    .community-videos-list .sessions-content a{
+        font-size: 20px;
+    }
+    .video-content .title h1{
+        font-size: 20px;
+    }
+    .user-profile h2{
+        font-size: 18px;
+    }
+    .video-content p {
+        font-size: 14px;
     }
 }
 
@@ -1445,6 +1475,55 @@ Responsive
     .job-seeker-fees h3 {
         font-size: 20px;
     }
+    .community-sec{
+        padding: 0;
+    }
+    .sidebar, .right-sidebar{
+        display: none;
+    }
+    .community-sec .container-fluid{
+        padding: 0 20px;
+    }
+    .top-card ul li{
+        width: 20%;
+    }
+    .desktop-card{
+        display: none;
+    }
+    .mobile-card{
+        display: block;
+    }
+    .community-videos-wrapper{
+        margin: 30px 0;
+    }
+    .community-videos-list .sessions-image-block a{
+        /* height: auto; */
+        width: auto;
+    }
+    .sessions-content a{
+        font-size: 18px;
+    }
+    .community-videos-list .sessions-content a{
+        font-size: 20px;
+    }
+    .session-caption a p{
+        font-size: 16px;
+    }
+    .video-content .title h1{
+        font-size: 20px;
+        margin: 15px 0 5px 0;
+    }
+    .videos-rightbar{
+        width: 100%;
+    }
+    .video-items {
+        display: flex;
+        gap: 2rem;
+    }
+    .community-videos-inner .sessions-cover-image, .community-videos-inner .sessions-image-block a{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 
@@ -1969,6 +2048,37 @@ Responsive
     }
     .newsletter-heading{
         padding: 1rem 0 0;
+    }
+    .top-card ul li{
+        width: 25%;
+    }
+    .community-sec .nav-tabs.nav-tabs-02 .nav-item .nav-link, .sessions-content a {
+        font-size: 16px;
+    }
+    .community-sec .main-title{
+        font-size: 20px;
+        margin: 0;
+    }
+    .community-videos-list .sessions-content a{
+        font-size: 20px;
+    }
+    
+    .top-card-mobile .right, .top-card-mobile .left{
+        width: 10%;
+    }
+    .top-card-mobile .center {
+        width: 80%;
+        flex-direction: column;
+        
+        /* align-items: center; */
+    }
+    .community-post-panel .user-dashboard-info-box .search {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .top-card-mobile .notify-box{
+        justify-content: center;
     }
 }
 
@@ -3082,6 +3192,55 @@ Responsive
     .job-seeker-fees h3 {
         font-size: 18px;
     }
+    .top-card ul li{
+        width: 30%;
+    }
+    .community-post-panel .user-dashboard-info-box .search{
+        width: 100%;
+    }
+    .community-post-panel .user-dashboard-info-box .search i{
+        padding: 8px 10px;
+    }
+    .community-sec .nav-tabs.nav-tabs-02 .nav-item .nav-link, .sessions-content a, .session-caption a p{
+        font-size: 14px;
+    }
+    .community-sec .nav-tabs.nav-tabs-02 .nav-item .nav-link {
+        margin: 0px 0px;
+        padding: 6px 6px 10px !important;
+    }
+    .community-videos-wrapper {
+        margin: 10px 0;
+    }
+    .community-videos-list .sessions-content a, .video-content .title h1, .video-content .title{
+        font-size: 18px;
+    }
+    .user-profile h2{
+        font-size: 16px;
+    }
+    .video-content p{
+        font-size: 14px;
+    }
+    .video-items {
+        flex-direction: column;
+    }
+    .community-videos-inner .sessions-content a, .community-videos .sessions-content a{
+        font-size: 18px;
+    }
+    .community-videos-inner .sessions-content a p, .community-videos .sessions-content a p{
+        font-size: 14px;
+    }
+    .video-items {
+        gap: 0;
+    }
+    .profile h3, .right-widget h2{
+        font-size: 18px;
+    }
+    .views-list ul li{
+        font-size: 16px;
+    }
+    .top-card-mobile .notify-box{
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-device-width: 480px) {
@@ -3210,7 +3369,10 @@ Responsive
     .equipment-counter .img-fluid{
         max-width: 80%;
     }
-
+    .top-card ul li, .top-card ul li:last-child{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (min-device-width: 1400px) {
